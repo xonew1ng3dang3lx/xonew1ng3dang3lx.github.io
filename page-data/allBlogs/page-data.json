@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-blog-list-index-js","path":"/allBlogs","result":{"data":{"allMarkdownRemark":{"pageInfo":{"hasNextPage":true,"currentPage":1},"edges":[{"node":{"frontmatter":{"title":"My 5 blog post","date":"2020-05-07"}}}]}},"pageContext":{"limit":1,"skip":0,"numPages":6,"currentPage":1}}}

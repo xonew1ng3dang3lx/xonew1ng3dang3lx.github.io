@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tagged-blog-list-index-js","path":"/japan","result":{"data":{"allMarkdownRemark":{"pageInfo":{"hasNextPage":true,"currentPage":1},"edges":[{"node":{"frontmatter":{"title":"Japan Trip 2","date":"2020-05-04"}}}]}},"pageContext":{"limit":1,"skip":0,"numPages":2,"currentPage":1,"tag":"japan"}}}

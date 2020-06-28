@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-blog-list-index-js","path":"/allBlogs/2","result":{"data":{"allMarkdownRemark":{"pageInfo":{"hasNextPage":true,"currentPage":2},"edges":[{"node":{"frontmatter":{"title":"San Diego To Utah","date":"2020-05-04"}}}]}},"pageContext":{"limit":1,"skip":1,"numPages":6,"currentPage":2}}}
