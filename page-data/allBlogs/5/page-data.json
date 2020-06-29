@@ -1,1 +1,0 @@
-{"componentChunkName":"component---src-templates-blog-list-index-js","path":"/allBlogs/5","result":{"data":{"allMarkdownRemark":{"pageInfo":{"hasNextPage":true,"currentPage":5},"edges":[{"node":{"frontmatter":{"title":"My 3 blog post","date":"2019-05-04"}}}]}},"pageContext":{"limit":1,"skip":4,"numPages":6,"currentPage":5}}}
