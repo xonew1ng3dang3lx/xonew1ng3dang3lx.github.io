@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://www.example.com/my-5-post</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.example.com/japan-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.example.com/road-trip</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.example.com/trip-to-japan</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.example.com/my-third-post</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.example.com/my-4-post</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.example.com/allBlogs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.example.com/japan</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.example.com/travel</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.example.com/animals</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.example.com/zoos</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.example.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://xonew1ng3dang3lx.github.io/my-5-post</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://xonew1ng3dang3lx.github.io/japan-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://xonew1ng3dang3lx.github.io/road-trip</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://xonew1ng3dang3lx.github.io/my-third-post</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://xonew1ng3dang3lx.github.io/my-4-post</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://xonew1ng3dang3lx.github.io/trip-to-japan</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://xonew1ng3dang3lx.github.io/allBlogs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://xonew1ng3dang3lx.github.io/japan</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://xonew1ng3dang3lx.github.io/travel</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://xonew1ng3dang3lx.github.io/animals</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://xonew1ng3dang3lx.github.io/zoos</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://xonew1ng3dang3lx.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
