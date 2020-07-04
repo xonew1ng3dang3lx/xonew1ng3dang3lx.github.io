@@ -3,6 +3,7 @@
 <url> <loc>https://techwaifu.com/e0a71ee5-a53c-4be1-b584-0c91122ff541</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techwaifu.com/190ccc96-4186-4c86-a388-501d37058149</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techwaifu.com/5165ea28-a7b5-4947-a9f8-5f0e199b1fb9</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://techwaifu.com/48418c33-265c-4918-b11e-62ec0d8be9d6</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techwaifu.com/blogs/all</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techwaifu.com/google</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techwaifu.com/photos</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -18,5 +19,9 @@
 <url> <loc>https://techwaifu.com/free</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techwaifu.com/github</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techwaifu.com/github_pages</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://techwaifu.com/gaming</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://techwaifu.com/battlestation</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://techwaifu.com/essentials</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://techwaifu.com/razer</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://techwaifu.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
