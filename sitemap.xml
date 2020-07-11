@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://techwaifu.com/a1ee7bdb-5f43-47c8-bb0c-209d6e434e5d</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/e77547a0-d912-489a-9689-b385cf6fcfda</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/a0297887-2f23-4974-abfd-200635a14d07</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/ea5d243a-62bf-4d25-ab40-05acb8c58317</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
@@ -8,17 +9,21 @@
 <url> <loc>https://techwaifu.com/5165ea28-a7b5-4947-a9f8-5f0e199b1fb9</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/48418c33-265c-4918-b11e-62ec0d8be9d6</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/blogs/all</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://techwaifu.com/camera</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://techwaifu.com/photography</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://techwaifu.com/batis</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://techwaifu.com/sony</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://techwaifu.com/zeiss</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://techwaifu.com/alpha</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://techwaifu.com/tech</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/programming</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/coding</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/website</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/accessibility</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/html</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/computer_science</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
-<url> <loc>https://techwaifu.com/camera</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
-<url> <loc>https://techwaifu.com/photography</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/leica</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/leica_q2</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
-<url> <loc>https://techwaifu.com/tech</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/gatsby</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/google</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/photos</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
