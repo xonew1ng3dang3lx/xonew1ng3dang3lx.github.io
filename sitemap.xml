@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://techwaifu.com/8037ceb2-9fe6-4994-9eec-7490570dfc35</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/cd2e7615-63de-484d-9572-d1d51a6a8239</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/a1ee7bdb-5f43-47c8-bb0c-209d6e434e5d</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/e77547a0-d912-489a-9689-b385cf6fcfda</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
@@ -12,10 +13,13 @@
 <url> <loc>https://techwaifu.com/blogs/all</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/blogs/all/2</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/work</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://techwaifu.com/bay_area</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://techwaifu.com/home</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://techwaifu.com/personal_finance</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://techwaifu.com/tech</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/pandemic</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/covid-19</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/remote_work</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
-<url> <loc>https://techwaifu.com/tech</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/camera</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/photography</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://techwaifu.com/batis</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
