@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://techwaifu.com/guide-computer-science-internship-and-expectations-2e2358ef</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/interesting-things-wish-knew-before-going-ucsd-5ee2265f</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/things-wish-knew-before-going-ucsd-computer-science-major-5ee2265f</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/what-is-structured-data-and-why-do-i-need-it-a3f06898</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
@@ -9,15 +10,16 @@
 <url> <loc>https://techwaifu.com/how-make-your-website-accessible-e77547a0</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/leica-q2-first-impressions-a0297887</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/why-im-using-gatsby-to-create-my-blog-site-ea5d243a</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
-<url> <loc>https://techwaifu.com/coding-on-an-ipad-190ccc96</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/how-get-unlimited-original-quality-google-photos-e0a71ee5</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
+<url> <loc>https://techwaifu.com/coding-on-an-ipad-190ccc96</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/how-to-host-a-website-for-free-5165ea28</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/pink-white-minimalist-gaming-setup-48418c33</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/blogs/all</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/blogs/all/2</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
-<url> <loc>https://techwaifu.com/ucsd</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
+<url> <loc>https://techwaifu.com/internship</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/college</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/computer_science</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
+<url> <loc>https://techwaifu.com/ucsd</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/website</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/coding</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/seo</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
@@ -41,12 +43,12 @@
 <url> <loc>https://techwaifu.com/leica</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/leica_q2</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/gatsby</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
-<url> <loc>https://techwaifu.com/ios</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
-<url> <loc>https://techwaifu.com/ipad</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/google</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/photos</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/cloud</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/storage</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
+<url> <loc>https://techwaifu.com/ios</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
+<url> <loc>https://techwaifu.com/ipad</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/blog</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/free</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
 <url> <loc>https://techwaifu.com/github</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
