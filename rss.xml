@@ -1,4 +1,109 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></title><description><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></description><link>https://techwaifu.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 03 Aug 2020 21:49:35 GMT</lastBuildDate><item><title><![CDATA[Retrospect: Choosing The Perfect College Major]]></title><description><![CDATA[If you find yourself stuck in choosing what college degree to pursue, then don’t worry, you are not alone. Many of us do not know what we…]]></description><link>https://techwaifu.com/choosing-college-major-688412f1</link><guid isPermaLink="false">https://techwaifu.com/choosing-college-major-688412f1</guid><pubDate>Mon, 03 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;If you find yourself stuck in choosing what college degree to pursue, then don’t worry, you are not alone. Many of us do not know what we want to do with our lives until many years later, hence why many adults experience a quarter-life and mid-life crisis quite often. As you find yourself deciding what career path to pursue, let me share with you my thoughts from what I’ve experienced in college and my lessons that may or may not help you in the long run. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></title><description><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></description><link>https://techwaifu.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 03 Aug 2020 22:50:13 GMT</lastBuildDate><item><title><![CDATA[Setting Up Java, Python, Node, React, and Angular on a Chromebook]]></title><description><![CDATA[My 2013 Apple Macbook Pro's battery started to get worse in 2020 so I started looking for a replacement laptop. I ended up picking up an HP…]]></description><link>https://techwaifu.com/ultimate-guide-coding-on-chromebook-bb405513</link><guid isPermaLink="false">https://techwaifu.com/ultimate-guide-coding-on-chromebook-bb405513</guid><pubDate>Tue, 04 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My 2013 Apple Macbook Pro&apos;s battery started to get worse in 2020 so I started looking for a replacement laptop. I ended up picking up an &lt;a href=&quot;https://amzn.to/2DoOw6C&quot;&gt;HP x2 Chromebook&lt;/a&gt; as my replacement device since I wanted to try out a ChromeOS device. I don&apos;t necessarily think this is the best &quot;programming laptop&quot; due to the lack of RAM. If you end up using a Chromebook as your primary programming laptop make sure you have at least 8GB of RAM and something faster than a M3 like the &lt;a href=&quot;https://amzn.to/3hU5vfY&quot;&gt;i5 Pixelbook Go&lt;/a&gt;. I also found it difficult to set up my programming environment due to the lack of tutorials so I decided to make my own after trying a bunch of different things.&lt;/p&gt;
+&lt;h2&gt;Set up Linux (Crostini) on your Chromebook&lt;/h2&gt;
+&lt;p&gt;This guide will cover how to set up your programming environment on a Crostini supported Chromebook device. You can find a &lt;a href=&quot;https://sites.google.com/a/chromium.org/dev/chromium-os/chrome-os-systems-supporting-linux&quot;&gt;list of supported Chromebook devices here&lt;/a&gt;, but according to that doc, &quot;the Chromebooks launched before 2019 that support Linux (Beta) are listed below. Unless otherwise specified, all devices launched in 2019 will support Linux (Beta)&quot;. So newer devices will support Crostini out of the box.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/2.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Turn on linux&quot;&gt;&lt;/p&gt;
+&lt;p&gt;By default Linux is turned off, so go into the Settings app and enable the setting.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/3.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Installing linux&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Follow the steps in the dialog box. The installation can take up to 10 minutes or longer depending on the specs of the device.&lt;/p&gt;
+&lt;p&gt;Once the installation is complete, you&apos;ll see a terminal app in the app tray.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/4.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verify the installation&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/5.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verify the installation&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Installing an IDE&lt;/h2&gt;
+&lt;p&gt;With Crostini enabled, you can also install some compatible Linux apps. I&apos;ll be installing &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VSCode&lt;/a&gt; on my Chromebook. Make sure you download the &lt;code&gt;.deb&lt;/code&gt; installer instead of the &lt;code&gt;.rpm&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/19.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Downloading VSCode&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Once the file is downloaded, go to your Downloads folder and double click on the &lt;code&gt;.deb&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/18.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Installing VSCode&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/21.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Running VSCode&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Setting up NPM &amp;#x26; Node&lt;/h2&gt;
+&lt;p&gt;Most frontend developers rely on NPM as their primary package manager. By default, the terminal does not have this installed, so we&apos;ll need to set it up ourselves. Run the following commands inside the terminal to install &lt;a href=&quot;https://docs.npmjs.com/cli/npm&quot;&gt;NPM&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get update
+
+sudo apt-get install curl gnupg -y
+
+curl -sl https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Verify that NPM has been installed correctly by running &lt;code&gt;npm --version&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/15.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verify the NPM&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;media-ads type=&quot;blog-content&quot;&gt;&lt;/media-ads&gt;&lt;/p&gt;
+&lt;h3&gt;Installing Yarn (Optional)&lt;/h3&gt;
+&lt;p&gt;I personally prefer to use &lt;a href=&quot;https://classic.yarnpkg.com/en/&quot;&gt;Yarn&lt;/a&gt; over NPM. You can install this by running &lt;code&gt;sudo npm install -g yarn&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Setting Up a Brand New React Project&lt;/h3&gt;
+&lt;p&gt;If you already have a React project, you can skip this step. If not you can easily create a React project using &lt;a href=&quot;https://reactjs.org/docs/create-a-new-react-app.html&quot;&gt;Create React App&lt;/a&gt;. Follow the steps below to start and run the brand new project.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npx create-react-app my-react-app
+
+cd my-react-app
+
+# If you installed Yarn use this
+yarn start
+
+# If you didnt install Yarn use this
+npm start
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Visit the url printed in the terminal. Usually it&apos;s &lt;a href=&quot;http://localhost:3000&quot;&gt;http://localhost:3000&lt;/a&gt;. You should see the following UI if everything is setup properly.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/6.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verifying React&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;media-ads type=&quot;blog-content-2&quot;&gt;&lt;/media-ads&gt;&lt;/p&gt;
+&lt;h3&gt;Setting Up a Brand New Angular Project&lt;/h3&gt;
+&lt;p&gt;If you prefer using Angular you can just as easily run a couple of commands to setup Angular.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo npm install -g @angular/cli
+
+ng new my-angular-app
+
+cd my-angular-app
+
+ng serve --open
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Visit &lt;a href=&quot;http://localhost:4200&quot;&gt;http://localhost:4200&lt;/a&gt; (or the url printed in the terminal) to verify it&apos;s working properly. You should see something like the picture below.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/7.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verifying Angular&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Setting Up Java and the JDK&lt;/h2&gt;
+&lt;p&gt;You can install the &lt;a href=&quot;https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html&quot;&gt;JDK&lt;/a&gt; to run Java programs on your chromebook. The JDK also contains the JRE, so you should be able to run all Java programs on your Chromebook. Run the following command below to install the JDK.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install default-jdk
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let&apos;s create a brand a simple Hello World app in Java to verify it works. You can either use vim or your favorite IDE to create a &lt;code&gt;Main.java&lt;/code&gt; file. Copy the following code into &lt;code&gt;Main.java&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class Main {
+    public static void main(String[] args) {
+        System.out.println(&quot;Hello TechWaifu&quot;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Afterwards, run the following commands to compile and run the Java app. You should see &quot;Hello TechWaifu&quot; printed in the terminal,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;javac Main.java 
+
+java Main.java
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/8.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Runing Java on Chromebook&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Setting Up Python 3.X&lt;/h2&gt;
+&lt;p&gt;The chromebook comes with &lt;a href=&quot;https://www.python.org/download/releases/2.7/&quot;&gt;Python 2.x&lt;/a&gt; installed by default, but you&apos;ll need to install Python 3.X yourself. Let&apos;s download &lt;a href=&quot;https://docs.conda.io/en/latest/miniconda.html&quot;&gt;Miniconda&lt;/a&gt; since it&apos;s much more barebones than something like Anaconda.&lt;/p&gt;
+&lt;p&gt;Find the Linux installers section and download the &quot;Miniconda3 Linux 64-bit&quot; file. For this tutorial, I&apos;ll be installing &lt;a href=&quot;https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh&quot;&gt;Python 3.8&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/9.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Download Miniconda for linux&quot;&gt;&lt;/p&gt;
+&lt;p&gt;After downloading the file, move &lt;code&gt;Miniconda3-latest-Linux-x86_64.sh&lt;/code&gt; from the &lt;code&gt;Downloads&lt;/code&gt; folder to &lt;code&gt;Linux Files&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/10.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Move the file&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Now open up your terminal again and type &lt;code&gt;ls&lt;/code&gt; to verify the file is there.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/11.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verify the file is there&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Once you&apos;ve confirmed the file is there, run the following command to install Python 3.8. You&apos;ll need to read through some licensing terms.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo bash Miniconda3-latest-Linux-x86_64.sh 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/12.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Reading licensing agreements&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Accept the licensing agreements by typing &lt;code&gt;yes&lt;/code&gt; into the terminal.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/13.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Accepting licensing agreements&quot;&gt;&lt;/p&gt;
+&lt;p&gt;After accepting the licensing terms, type in &lt;code&gt;/opt/miniconda3&lt;/code&gt; to set install Miniconda3 to that location. You&apos;ll need to restart your terminal once all of this is complete. You can simply close the app and open another terminal instance.&lt;/p&gt;
+&lt;p&gt;In the new terminal instance, grant the proper permissions for the directory so that conda can manage the packages properly. Run the following command, but replace &lt;code&gt;ironman&lt;/code&gt; with your username. You&apos;ll find the username before the &lt;code&gt;@penguin&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/16.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Linux Username&quot;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo chown -R ironman /opt/miniconda3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let&apos;s start up Conda by running &lt;code&gt;source /opt/miniconda3/bin/activate&lt;/code&gt;. You can also add this into your &lt;code&gt;./bashrc&lt;/code&gt; file so you don&apos;t need to type up the whole thing everytime.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo &apos;alias python_3=&quot;source /opt/miniconda3/bin/activate&quot;&apos; &gt;&gt; ~/.bashrc
+
+source ~/.bashrc
+
+python_3
+
+python
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Run &lt;code&gt;print(&quot;Hello TechWaifu&quot;)&lt;/code&gt; to verify everything works.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/14.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Granting permissions for Miniconda3&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Chromebooks have become much more useful developer tools with the release of Crostini and support of Linux Apps. You can even do Android programming with &lt;a href=&quot;https://developer.android.com/studio&quot;&gt;Android Studio&lt;/a&gt; on your Chromebook! I haven&apos;t tried this myself since 4GB of RAM is barely enough to even run VSCode. Do you use a Chromebook as your primary coding laptop? Which one do you use? Let me know in the comments section below and also check out &lt;a href=&quot;https://techwaifu.com/coding-on-an-ipad-190ccc96&quot;&gt;How to Code on an iPad&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Retrospect: Choosing The Perfect College Major]]></title><description><![CDATA[If you find yourself stuck in choosing what college degree to pursue, then don’t worry, you are not alone. Many of us do not know what we…]]></description><link>https://techwaifu.com/choosing-college-major-688412f1</link><guid isPermaLink="false">https://techwaifu.com/choosing-college-major-688412f1</guid><pubDate>Mon, 03 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;If you find yourself stuck in choosing what college degree to pursue, then don’t worry, you are not alone. Many of us do not know what we want to do with our lives until many years later, hence why many adults experience a quarter-life and mid-life crisis quite often. As you find yourself deciding what career path to pursue, let me share with you my thoughts from what I’ve experienced in college and my lessons that may or may not help you in the long run. &lt;/p&gt;
 &lt;p&gt;Many young students are left with two options to choose from: a career with good money and stability vs. a career that relates to their interests and hobbies. Between these two choices, one will usually mean accepting what society tells them is successful, while the other one means turning their backs on what they love doing. &lt;/p&gt;
 &lt;p&gt;The most common outcome is picking a college degree that will provide good pay and stability. A reason for this is because money and economic profits is the number one motivation above all else. We create normality out of any practice or profession and we put labels on what majors have higher chance of success. Over the years, we have started to abuse this concept by narrowing our options and only strive for high paying jobs only. We neglect what other options are there that might fit our personality and our stress levels better. &lt;/p&gt;
 &lt;p&gt;We, as a society, have mixed inner greatness with money and power and place influence on each generation that comes along. No one dares to explore other professions as much because everyone wants to make their money proliferate in this affluent type of culture rather than spending their time doing something they love. That is because the words “money” and “success” are akin in most people’s minds and are something constant no matter who or where we came from. Students who do decide to major in music, philosophy, or liberal arts often face severe feelings of inadequacy because they are compared to society’s standard of what is successful.&lt;/p&gt;
