@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></title><description><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></description><link>https://techwaifu.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 09 Aug 2020 00:00:45 GMT</lastBuildDate><item><title><![CDATA[The Best Chromebooks for Programming in 2020]]></title><description><![CDATA[Having trouble choosing a Chromebook as your primary development machine? With so many laptops and ChromeOS devices on the market today…]]></description><link>https://techwaifu.com/recommended-chromebooks-for-programming-2020-5734ed1a</link><guid isPermaLink="false">https://techwaifu.com/recommended-chromebooks-for-programming-2020-5734ed1a</guid><pubDate>Thu, 06 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Having trouble choosing a Chromebook as your primary development machine? With so many laptops and ChromeOS devices on the market today, purchasing a laptop is always a difficult process. Luckily for you, I&apos;ve compiled a list of the best Chromebooks for your programming needs.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></title><description><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></description><link>https://techwaifu.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 09 Aug 2020 19:53:33 GMT</lastBuildDate><item><title><![CDATA[Developing Android Apps on a Chromebook in 2020]]></title><description><![CDATA[Developing Android Apps on a Chromebook haven't been easier in 2020. I tested this out on a HP x2 Chromebook, but I would recommend a better…]]></description><link>https://techwaifu.com/android-development-on-chromebook-2020-5734ed1a</link><guid isPermaLink="false">https://techwaifu.com/android-development-on-chromebook-2020-5734ed1a</guid><pubDate>Sun, 09 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Developing Android Apps on a Chromebook haven&apos;t been easier in 2020. I tested this out on a &lt;a href=&quot;https://amzn.to/2DoOw6C&quot;&gt;HP x2 Chromebook&lt;/a&gt;, but I would recommend a better machine. Mobile development generally requires a pretty good machine in order to compile and build the project quickly. Check out my list of &lt;a href=&quot;https://techwaifu.com/recommended-chromebooks-for-programming-2020-5734ed1a&quot;&gt;Best Chromebooks for Programming&lt;/a&gt; if you&apos;re not sure which Chromebook to use. If you already have a Chromebook, make sure the &lt;a href=&quot;https://sites.google.com/a/chromium.org/dev/chromium-os/chrome-os-systems-supporting-linux&quot;&gt;device is compatible with Crostini&lt;/a&gt; since this tutorial assumes you&apos;re using Crostini.&lt;/p&gt;
+&lt;h2&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;Make sure you follow the steps in &lt;a href=&quot;https://techwaifu.com/ultimate-guide-coding-on-chromebook-bb405513&quot;&gt;Setting Up Java, Python, Node, React, and Angular on a Chromebook&lt;/a&gt; to set up Crostini. You&apos;ll only need to follow the steps under &quot;Set up Linux (Crostini) on your Chromebook&quot;. Once that&apos;s complete, come back to this tutorial.&lt;/p&gt;
+&lt;h2&gt;Setting Up Android Studio&lt;/h2&gt;
+&lt;p&gt;Setting up Android Studio to write native apps on a Chromebook is relatively simple, you&apos;ll just need to download Android Studio.&lt;/p&gt;
+&lt;h3&gt;Download Android Studio&lt;/h3&gt;
+&lt;p&gt;Get started by &lt;a href=&quot;https://developer.android.com/studio&quot;&gt;downloading Android Studio&lt;/a&gt;. You&apos;ll find the &lt;code&gt;.deb&lt;/code&gt; file under your &lt;code&gt;Downloads&lt;/code&gt; folder. Double click it in order to install it.&lt;/p&gt;
+&lt;h3&gt;Enabling ADB&lt;/h3&gt;
+&lt;p&gt;Since the Chromebook can run Android apps, you can actually build and run the Android app on the Chromebook itself. In the settings app, go to the linux section.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/3.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Enabling ADB&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Click the &quot;Develop Android Apps&quot; section and toggle the feature on. You&apos;ll need to reboot the device to activate the feature.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/5.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Enabling ADB&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;Verifying Android Studio is Setup Properly&lt;/h3&gt;
+&lt;p&gt;After enabling ADB, you can create a sample project in Android Studio and run the app. It took almost 20 minutes for &lt;a href=&quot;https://gradle.org/&quot;&gt;Gradle&lt;/a&gt; to complete the very first build. I suspect this has to do with my Chromebook having 4GB of RAM. If everything is setup correctly, you&apos;ll see the Android app running like the screenshot below.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/2.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Android Studio with Android App&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You&apos;ll also see the Android app will appear in your App Tray.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/6.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Android App in App Tray&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Setting Up Flutter&lt;/h2&gt;
+&lt;p&gt;After testing out Android Studio for native Android development, I was curious to see if you could use Flutter on a Chromebook as well and it turns out you can.
+&lt;a href=&quot;https://flutter.dev/&quot;&gt;Flutter&lt;/a&gt; is a framework that lets you write a mobile application once and it will generate an iOS and Android app. Flutter recently got support for Web as well, but it&apos;s still in beta. Make sure you follow the steps to set up Android Studio or else this won&apos;t work. You can find the &lt;a href=&quot;https://flutter.dev/docs/get-started/install/chromeos&quot;&gt;official doc for installing Flutter here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Installing the Flutter SDK&lt;/h3&gt;
+&lt;p&gt;First download the Flutter SDK by clicking on this &lt;a href=&quot;https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_1.20.1-stable.tar.xz&quot;&gt;link&lt;/a&gt;. Make sure you move the SDK from your &lt;code&gt;Downloads&lt;/code&gt; folder to your &lt;code&gt;Linux files&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/7.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Flutter SDK&quot;&gt;&lt;/p&gt;
+&lt;p&gt;After you download the SDK, open up your terminal and type in the following commands. This will extract the binary.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir development
+cd ~/development
+tar xf ~/flutter_linux_1.20.1-stable.tar.xz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next open up your &lt;code&gt;~/.bashrc&lt;/code&gt; file and add the following code to it. This will make it easier to run the &lt;code&gt;flutter&lt;/code&gt; commands whenever we have a new terminal instance. If you already have a PATH export, add it to the existing PATH export.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;export PATH=&quot;$PATH:`pwd`/development/flutter/bin&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After updating the &lt;code&gt;~/.bashrc&lt;/code&gt; file, make sure to run &lt;code&gt;source ~/.bashrc&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/8.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Flutter Bashrc&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;Verifying the Flutter SDK is Installed&lt;/h3&gt;
+&lt;p&gt;Run the following command to verify you installed Flutter correctly.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;which flutter
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You should see something like &lt;code&gt;/home/ironman/development/flutter/bin/flutter&lt;/code&gt; printed to the terminal. If nothing is printed then you most likely made a mistake earlier.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/21.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verifying Flutter SDK&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;Downloading Development Binaries&lt;/h3&gt;
+&lt;p&gt;Run the following commands to make sure we get all the requirement dependencies. Running &lt;code&gt;flutter doctor&lt;/code&gt; will verify your environment and make sure you have everything needed to run Flutter properly. When you run &lt;code&gt;flutter doctor --android-licenses&lt;/code&gt;, you&apos;ll need to accept a couple of licensing agreements.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/10.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verifying Flutter Doctor&quot;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;flutter precache
+flutter doctor
+flutter doctor --android-licenses
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After running those commands, you&apos;ll see running &lt;code&gt;flutter doctor&lt;/code&gt; outputs something like the screenshot below. Don&apos;t worry if you see an exclamation mark by Android Studio.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/11.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verifying Flutter Doctor after installing dependencies&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Also make sure you have ADB setup correctly by running &lt;code&gt;flutter devices&lt;/code&gt;. You&apos;ll see your device&apos;s name printed in the terminal.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/12.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Flutter Devices&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;Setting Up an IDE&lt;/h3&gt;
+&lt;p&gt;I presonally don&apos;t like using Android Studio since it&apos;s a memory hog so I use &lt;a href=&quot;https://code.visualstudio.com/download&quot;&gt;VSCode&lt;/a&gt; instead. Make sure you download the &lt;code&gt;.deb&lt;/code&gt; file instead of the &lt;code&gt;.rpm&lt;/code&gt; file. After installing VSCode, install the Flutter Extension.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/19.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;VSCode Flutter Extension&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;Creating your First Flutter App&lt;/h3&gt;
+&lt;p&gt;Flutter makes it super easy to create a new project. Just run the following command in the terminal and it&apos;ll automatically generate a new project.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/15.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Create Flutter Project&quot;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;flutter create flutterapp
+cd flutterapp/
+flutter run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After running &lt;code&gt;flutter run&lt;/code&gt;, you&apos;ll see the sample app after the project successfully builds. Unfortunately, you won&apos;t be able to test out the iOS counterpart unless you have a &lt;a href=&quot;https://amzn.to/2CgtmHG&quot;&gt;Mac&lt;/a&gt; since you need &lt;a href=&quot;https://apps.apple.com/us/app/xcode/id497799835?mt=12&quot;&gt;xCode&lt;/a&gt; which is exclusive to MacOS.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/17.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Running a Flutter App&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;There you have it! You&apos;re now ready to make native Android apps and Flutter apps on your Chromebook. If you enjoyed this article please leave a comment in the comments section below.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Best Chromebooks for Programming in 2020]]></title><description><![CDATA[Having trouble choosing a Chromebook as your primary development machine? With so many laptops and ChromeOS devices on the market today…]]></description><link>https://techwaifu.com/recommended-chromebooks-for-programming-2020-5734ed1a</link><guid isPermaLink="false">https://techwaifu.com/recommended-chromebooks-for-programming-2020-5734ed1a</guid><pubDate>Thu, 06 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Having trouble choosing a Chromebook as your primary development machine? With so many laptops and ChromeOS devices on the market today, purchasing a laptop is always a difficult process. Luckily for you, I&apos;ve compiled a list of the best Chromebooks for your programming needs.&lt;/p&gt;
 &lt;p&gt;The requirements for a good programming device is the same regardless of the OS. Having a decent CPU, a minimum of 8GB of RAM, and a good amount of disk space are essential for a programming laptop. Most Chromebooks come with a Core m3 which is designed for fanless systems and can get throttled under high load. Unfortunately majority of Chromebooks don&apos;t have any fans so expect a bit of throttling if you go with a fanless system. Also, expect these devices to be more expensive than your typical Chromebook due to the higher specs. &lt;/p&gt;
 &lt;h2&gt;&lt;a href=&quot;https://amzn.to/2DLzVSL&quot;&gt;Acer Chromebook Spin 713&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/acer_chromebook_spin.jpg?width=960&amp;#x26;height=631&quot; alt=&quot;Acer Chromebook Spin 713&quot;&gt;&lt;/p&gt;
@@ -271,11 +334,11 @@
 &lt;p&gt;&lt;img src=&quot;/blogImages/zeiss_batis_85/17-low.jpeg?width=6000&amp;#x26;height=4000&amp;#x26;hiRes=17.jpeg&quot; alt=&quot;Zeiss Batis 85mm Bokeh&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img-caption&gt;ƒ/1.8 | 1/80 sec | ISO 400&lt;/img-caption&gt;&lt;/p&gt;
 &lt;h3&gt;Other Shots&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/zeiss_batis_85/10-low.jpeg?width=6000&amp;#x26;height=4000&amp;#x26;hiRes=10.jepg&quot; alt=&quot;Zeiss Batis 85mm Sample Image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/zeiss_batis_85/10-low.jpeg?width=6000&amp;#x26;height=4000&amp;#x26;hiRes=10.jpeg&quot; alt=&quot;Zeiss Batis 85mm Sample Image&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img-caption&gt;ƒ/1.8 | 1/1250 sec | ISO 100&lt;/img-caption&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/zeiss_batis_85/12-low.jpeg?width=6000&amp;#x26;height=4000&amp;#x26;hiRes=12.jepg&quot; alt=&quot;Zeiss Batis 85mm Sample Image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/zeiss_batis_85/12-low.jpeg?width=6000&amp;#x26;height=4000&amp;#x26;hiRes=12.jpeg&quot; alt=&quot;Zeiss Batis 85mm Sample Image&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img-caption&gt;ƒ/1.8 | 1/2500 sec | ISO 800&lt;/img-caption&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/zeiss_batis_85/15-low.jpeg?width=6000&amp;#x26;height=4000&amp;#x26;hiRes=15.jepg&quot; alt=&quot;Zeiss Batis 85mm Sample Image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/zeiss_batis_85/15-low.jpeg?width=6000&amp;#x26;height=4000&amp;#x26;hiRes=15.jpeg&quot; alt=&quot;Zeiss Batis 85mm Sample Image&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img-caption&gt;ƒ/5.6 | 1/1250 sec | ISO 100&lt;/img-caption&gt;&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;The &lt;a href=&quot;https://amzn.to/2EVDeHQ&quot;&gt;Zeiss Batis 85mm&lt;/a&gt; is still a bit expensive compared to other options like the &lt;a href=&quot;https://amzn.to/3gxnCIh&quot;&gt;Sony FE 85mm f/1.8&lt;/a&gt;, but the extra cost translates to an amazing build quality and image quality. I prefer this lens over the Sony GM 85mm f/1.4 due to the sheer size. It would&apos;ve been nice to have included an aperture ring on the lens to make shooting full manual easier. However, I really do enjoy the sharp and contrasty look the lens produces especially at f/1.8. It&apos;s also a versatile and fast lens that can be used for portraits, street photography, and landscapes. In fact, this is my go to lens for portraits because how amazing the bokeh looks. I definitely recommend this lens even in 2020 even with all of the other options on the market.&lt;/p&gt;
