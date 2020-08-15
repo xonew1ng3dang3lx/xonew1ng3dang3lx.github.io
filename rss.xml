@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></title><description><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></description><link>https://techwaifu.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 15 Aug 2020 21:34:42 GMT</lastBuildDate><item><title><![CDATA[Machine Learning to Increase Photo Resolution with Pixelmator Pro]]></title><description><![CDATA[Ever wanted the power to increase the resolution of images like in those cop shows? Well now you can with Pixelmator Pro using the ML Super…]]></description><link>https://techwaifu.com/blog/machine-learning-photos-46a2d49c</link><guid isPermaLink="false">https://techwaifu.com/blog/machine-learning-photos-46a2d49c</guid><pubDate>Tue, 11 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Ever wanted the power to increase the resolution of images like in those cop shows? Well now you can with Pixelmator Pro using the &lt;a href=&quot;https://www.pixelmator.com/blog/2019/12/17/all-about-the-new-ml-super-resolution-feature-in-pixelmator-pro/&quot;&gt;ML Super Resolution&lt;/a&gt; feature. You can read that linked blog post for more details on how it works, but the TLDR is Pixelmator uses machine learning to predict how the image should look. They trained the app with a large dataset of images to train a model on how to upscale an image. This app only works for Mac OSX and they recommend using a new Mac for the fastest performance like the new &lt;a href=&quot;https://amzn.to/2Dwfda4&quot;&gt;Macbook Pro 16 inch&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></title><description><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></description><link>https://techwaifu.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 15 Aug 2020 21:55:05 GMT</lastBuildDate><item><title><![CDATA[Machine Learning to Increase Photo Resolution with Pixelmator Pro]]></title><description><![CDATA[Ever wanted the power to increase the resolution of images like in those cop shows? Well now you can with Pixelmator Pro using the ML Super…]]></description><link>https://techwaifu.com/blog/machine-learning-photos-46a2d49c</link><guid isPermaLink="false">https://techwaifu.com/blog/machine-learning-photos-46a2d49c</guid><pubDate>Tue, 11 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Ever wanted the power to increase the resolution of images like in those cop shows? Well now you can with Pixelmator Pro using the &lt;a href=&quot;https://www.pixelmator.com/blog/2019/12/17/all-about-the-new-ml-super-resolution-feature-in-pixelmator-pro/&quot;&gt;ML Super Resolution&lt;/a&gt; feature. You can read that linked blog post for more details on how it works, but the TLDR is Pixelmator uses machine learning to predict how the image should look. They trained the app with a large dataset of images to train a model on how to upscale an image. This app only works for Mac OSX and they recommend using a new Mac for the fastest performance like the new &lt;a href=&quot;https://amzn.to/2Dwfda4&quot;&gt;Macbook Pro 16 inch&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Testing Against a Manually Compressed Image&lt;/h2&gt;
 &lt;p&gt;For the first test, I manually reduced the image resolution of a picture of everyone&apos;s favorite feline friend. The original image was 488x488 pixels. I ran ML Super Resolution against a compressed version which was 100x100. The image below is the original for reference.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/jonah.jpg?width=488&amp;#x26;height=488&quot; alt=&quot;Cat&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/jonah.jpg?width=488&amp;#x26;height=488&amp;#x26;isResponsive=true&quot; alt=&quot;Cat&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;Compressed Image (100x100) VS ML Enhanced Image&lt;/h3&gt;
 &lt;p&gt;The image on the left side is the compressed image and the image on the right side is the ML enhanced. To be honest, this was pretty impressive. The edges are much more smooth as if anti-aliasing was applied on the image. Pixelmator&apos;s algorithm was able to upscale the image to 300x300.&lt;/p&gt;
 &lt;p&gt;&lt;img-compare leftImage=&quot;/blogImages/ml_images/jonah-low.jpg&quot; rightImage=&quot;/blogImages/ml_images/jonah-low-ml.jpg&quot; leftImageLabel=&quot;Compressed Image&quot; rightImageLabel=&quot;ML Enhanced Image&quot;&gt;&lt;/img-compare&gt;&lt;/p&gt;
@@ -14,27 +14,27 @@
 &lt;p&gt;In this comparison, the ML enhanced photo (which is on the right) did something odd to the matcha powder. They look like small onions to be honest. The ML Super Resolution version was upscaled to 1500x2250 while the compressed version was 500x750.&lt;/p&gt;
 &lt;p&gt;&lt;img-compare leftImage=&quot;/blogImages/ml_images/ice_cream-low.jpg&quot; rightImage=&quot;/blogImages/ml_images/ice_cream-ml.jpg&quot; leftImageLabel=&quot;Compressed Image&quot; rightImageLabel=&quot;ML Enhanced Image&quot;&gt;&lt;/img-compare&gt;&lt;/p&gt;
 &lt;h3&gt;Zooming into both images&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/ice_cream_low_compare_3.jpg?width=1500&amp;#x26;height=2200&quot; alt=&quot;Comparing crepe with ML enhanced photo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/ice_cream_low_compare_3.jpg?width=1500&amp;#x26;height=2200&amp;#x26;isResponsive=true&quot; alt=&quot;Comparing crepe with ML enhanced photo&quot;&gt;&lt;/p&gt;
 &lt;p&gt;When zoomed in, you can definitely tell the enhanced photo (right side) does look more smooth.&lt;/p&gt;
 &lt;h3&gt;ML Enhanced Image VS Original Image&lt;/h3&gt;
 &lt;p&gt;Just like the previous example, I wanted to see how well the machine learning algorithm fairs againsts the full sized image. So far, it looks like the algorithm does a good job at getting rid of those jagged lines, but it doesn&apos;t add more detail and clarity as specified by their &lt;a href=&quot;https://www.pixelmator.com/blog/2019/12/17/all-about-the-new-ml-super-resolution-feature-in-pixelmator-pro/&quot;&gt;article&lt;/a&gt;. &quot;The algorithm can’t recreate detail that is too small to be visible but it can make amazing predictions about edges, shapes, contours, and patterns that traditional algorithms simply cannot&quot;.&lt;/p&gt;
 &lt;p&gt;&lt;img-compare leftImage=&quot;/blogImages/ml_images/ice_cream-ml.jpg&quot; rightImage=&quot;/blogImages/ml_images/ice_cream.jpg&quot; leftImageLabel=&quot;ML Enhanced Image&quot; rightImageLabel=&quot;Original Image&quot;&gt;&lt;/img-compare&gt;&lt;/p&gt;
 &lt;p&gt;In the photos below, the ML enhanced image is on the left side and the original is on the right.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/ice_cream_compare_2.jpg?width=1500&amp;#x26;height=2200&quot; alt=&quot;Comparing crepe with high res photo&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/ice_cream_compare_3.jpg?width=1500&amp;#x26;height=2200&quot; alt=&quot;Comparing crepe with high res photo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/ice_cream_compare_2.jpg?width=1500&amp;#x26;height=2200&amp;#x26;isResponsive=true&quot; alt=&quot;Comparing crepe with high res photo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/ice_cream_compare_3.jpg?width=1500&amp;#x26;height=2200&amp;#x26;isResponsive=true&quot; alt=&quot;Comparing crepe with high res photo&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Machine Learning to Enhance Faraway Objects&lt;/h2&gt;
 &lt;p&gt;For the next test, I wanted to see if the algorithm could improve a photo that wasn&apos;t manually compressed. For this example, I found an image of a boat in the ocean and cropped the boat to see if it could improve the boat&apos;s resolution.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/boat_original.jpeg?width=1008&amp;#x26;height=672&quot; alt=&quot;Original boat photo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/boat_original.jpeg?width=1008&amp;#x26;height=672&amp;#x26;isResponsive=true&quot; alt=&quot;Original boat photo&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img-compare leftImage=&quot;/blogImages/ml_images/boat_ml.jpg&quot; rightImage=&quot;/blogImages/ml_images/boat.jpg&quot; leftImageLabel=&quot;ML Enhanced Image&quot; rightImageLabel=&quot;Original Image&quot;&gt;&lt;/img-compare&gt;&lt;/p&gt;
 &lt;p&gt;I was actually surprised how well it did for this example. You can see the windows have more clarity and the text looks sharper. The island also looks a bit sharper if you look close enough at the house. &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/boat_compare_1.jpg?width=261&amp;#x26;height=130&quot; alt=&quot;Boat&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/boat_compare_1.jpg?width=261&amp;#x26;height=130&amp;#x26;isResponsive=true&quot; alt=&quot;Boat&quot;&gt;&lt;/p&gt;
 &lt;p&gt;When zooming into the images you&apos;ll notice the left side is less jaggedy compared to the cropped photo. This makes sense since the ML algorithm tries to smooth out edges &lt;/p&gt;
 &lt;h2&gt;Machine Learning to Enhance Faraway Objects Part 2&lt;/h2&gt;
 &lt;p&gt;More or less the same test as the previous example. I was impressed how the image was upscaled from 131x126 to 393x378. The ML enhanced photo definitely looks much sharper.&lt;/p&gt;
 &lt;p&gt;&lt;img-compare leftImage=&quot;/blogImages/ml_images/lamb_ml.jpg&quot; rightImage=&quot;/blogImages/ml_images/lamb.jpg&quot; leftImageLabel=&quot;ML Enhanced Image&quot; rightImageLabel=&quot;Original Image&quot;&gt;&lt;/img-compare&gt;&lt;/p&gt;
 &lt;p&gt;When zoomed in, you can see how smooth the pixels look on the ML enhanced side.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/lamb_compare_1.jpg?width=393&amp;#x26;height=378&quot; alt=&quot;Lamb&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/lamb_compare_2.jpg?width=100&amp;#x26;height=135&quot; alt=&quot;Lamb&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/lamb_compare_1.jpg?width=393&amp;#x26;height=378&amp;#x26;isResponsive=true&quot; alt=&quot;Lamb&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/lamb_compare_2.jpg?width=100&amp;#x26;height=135&amp;#x26;isResponsive=true&quot; alt=&quot;Lamb&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;Conclusion&lt;/h3&gt;
 &lt;p&gt;I&apos;m pretty impressed by how well the algorithm works. While I probably won&apos;t use this too often, I can see myself using this time to time on older photos. With more training, I can see this algorithm improving the level of detail that we&apos;ll get from the enhanced photos. Have you tried using this feature yet? If not check out the &lt;a href=&quot;https://apps.apple.com/us/app/pixelmator-pro/id1289583905?mt=12&quot;&gt;app here&lt;/a&gt; and leave a comment below!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Develop Android Apps on a Chromebook in 2020]]></title><description><![CDATA[Developing Android Apps on a Chromebook haven't been easier in 2020. I tested this out on a HP x2 Chromebook, but I would recommend a better…]]></description><link>https://techwaifu.com/android-development-on-chromebook-2020-5734ed1a</link><guid isPermaLink="false">https://techwaifu.com/android-development-on-chromebook-2020-5734ed1a</guid><pubDate>Sun, 09 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Developing Android Apps on a Chromebook haven&apos;t been easier in 2020. I tested this out on a &lt;a href=&quot;https://amzn.to/2DoOw6C&quot;&gt;HP x2 Chromebook&lt;/a&gt;, but I would recommend a better machine. Mobile development generally requires a pretty good machine (like an &lt;a href=&quot;https://amzn.to/3hU5vfY&quot;&gt;i5 Pixelbook Go&lt;/a&gt;) in order to compile and build the project quickly. Check out my list of &lt;a href=&quot;https://techwaifu.com/recommended-chromebooks-for-programming-2020-5734ed1a&quot;&gt;Best Chromebooks for Programming&lt;/a&gt; if you&apos;re not sure which Chromebook to use. If you already have a Chromebook, make sure the &lt;a href=&quot;https://sites.google.com/a/chromium.org/dev/chromium-os/chrome-os-systems-supporting-linux&quot;&gt;device is compatible with Crostini&lt;/a&gt; since this tutorial assumes you&apos;re using Crostini.&lt;/p&gt;
 &lt;h2&gt;Prerequisites&lt;/h2&gt;
@@ -45,20 +45,20 @@
 &lt;p&gt;Get started by &lt;a href=&quot;https://developer.android.com/studio&quot;&gt;downloading Android Studio&lt;/a&gt;. You&apos;ll find the &lt;code&gt;.deb&lt;/code&gt; file under your &lt;code&gt;Downloads&lt;/code&gt; folder. Double click it in order to install it.&lt;/p&gt;
 &lt;h3&gt;Enabling ADB&lt;/h3&gt;
 &lt;p&gt;Since the Chromebook can run Android apps, you can actually build and run the Android app on the Chromebook itself. In the settings app, go to the linux section.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/3.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Enabling ADB&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/3.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Enabling ADB&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Click the &quot;Develop Android Apps&quot; section and toggle the feature on. You&apos;ll need to reboot the device to activate the feature.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/5.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Enabling ADB&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/5.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Enabling ADB&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;Verifying Android Studio is Setup Properly&lt;/h3&gt;
 &lt;p&gt;After enabling ADB, you can create a sample project in Android Studio and run the app. It took almost 20 minutes for &lt;a href=&quot;https://gradle.org/&quot;&gt;Gradle&lt;/a&gt; to complete the very first build. I suspect this has to do with my Chromebook having 4GB of RAM. If everything is setup correctly, you&apos;ll see the Android app running like the screenshot below.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/2.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Android Studio with Android App&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/2.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Android Studio with Android App&quot;&gt;&lt;/p&gt;
 &lt;p&gt;You&apos;ll also see the Android app will appear in your App Tray.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/6.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Android App in App Tray&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/6.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Android App in App Tray&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Setting Up Flutter&lt;/h2&gt;
 &lt;p&gt;After testing out Android Studio for native Android development, I was curious to see if you could use Flutter on a Chromebook as well and it turns out you can.
 &lt;a href=&quot;https://flutter.dev/&quot;&gt;Flutter&lt;/a&gt; is a framework that lets you write a mobile application once and it will generate an iOS and Android app. Flutter recently got support for Web as well, but it&apos;s still in beta. Make sure you follow the steps to set up Android Studio or else this won&apos;t work. You can find the &lt;a href=&quot;https://flutter.dev/docs/get-started/install/chromeos&quot;&gt;official doc for installing Flutter here&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Installing the Flutter SDK&lt;/h3&gt;
 &lt;p&gt;First download the Flutter SDK by clicking on this &lt;a href=&quot;https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_1.20.1-stable.tar.xz&quot;&gt;link&lt;/a&gt;. Make sure you move the SDK from your &lt;code&gt;Downloads&lt;/code&gt; folder to your &lt;code&gt;Linux files&lt;/code&gt; folder.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/7.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Flutter SDK&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/7.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Flutter SDK&quot;&gt;&lt;/p&gt;
 &lt;p&gt;After you download the SDK, open up your terminal and type in the following commands. This will extract the binary.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;mkdir development
 cd ~/development
@@ -68,16 +68,16 @@ tar xf ~/flutter_linux_1.20.1-stable.tar.xz
 &lt;pre&gt;&lt;code&gt;export PATH=&quot;$PATH:`pwd`/development/flutter/bin&quot;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;After updating the &lt;code&gt;~/.bashrc&lt;/code&gt; file, make sure to run &lt;code&gt;source ~/.bashrc&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/8.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Flutter Bashrc&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/8.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Flutter Bashrc&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;Verifying the Flutter SDK is Installed&lt;/h3&gt;
 &lt;p&gt;Run the following command to verify you installed Flutter correctly.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;which flutter
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You should see something like &lt;code&gt;/home/ironman/development/flutter/bin/flutter&lt;/code&gt; printed to the terminal. If nothing is printed then you most likely made a mistake earlier.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/21.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verifying Flutter SDK&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/21.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verifying Flutter SDK&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;Downloading Development Binaries&lt;/h3&gt;
 &lt;p&gt;Run the following commands to make sure we get all the requirement dependencies. Running &lt;code&gt;flutter doctor&lt;/code&gt; will verify your environment and make sure you have everything needed to run Flutter properly. When you run &lt;code&gt;flutter doctor --android-licenses&lt;/code&gt;, you&apos;ll need to accept a couple of licensing agreements.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/10.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verifying Flutter Doctor&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/10.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verifying Flutter Doctor&quot;&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;flutter precache
 flutter doctor
 flutter doctor --android-licenses
@@ -85,19 +85,19 @@ flutter doctor --android-licenses
 &lt;p&gt;After running those commands, you&apos;ll see running &lt;code&gt;flutter doctor&lt;/code&gt; outputs something like the screenshot below. Don&apos;t worry if you see an exclamation mark by Android Studio.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/11.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verifying Flutter Doctor after installing dependencies&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Also make sure you have ADB setup correctly by running &lt;code&gt;flutter devices&lt;/code&gt;. You&apos;ll see your device&apos;s name printed in the terminal.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/12.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Flutter Devices&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/12.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Flutter Devices&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;Setting Up an IDE&lt;/h3&gt;
 &lt;p&gt;I presonally don&apos;t like using Android Studio since it&apos;s a memory hog so I use &lt;a href=&quot;https://code.visualstudio.com/download&quot;&gt;VSCode&lt;/a&gt; instead. Make sure you download the &lt;code&gt;.deb&lt;/code&gt; file instead of the &lt;code&gt;.rpm&lt;/code&gt; file. After installing VSCode, install the Flutter Extension.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/19.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;VSCode Flutter Extension&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;Creating your First Flutter App&lt;/h3&gt;
 &lt;p&gt;Flutter makes it super easy to create a new project. Just run the following command in the terminal and it&apos;ll automatically generate a new project.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/15.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Create Flutter Project&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/15.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Create Flutter Project&quot;&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;flutter create flutterapp
 cd flutterapp/
 flutter run
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;After running &lt;code&gt;flutter run&lt;/code&gt;, you&apos;ll see the sample app after the project successfully builds. Unfortunately, you won&apos;t be able to test out the iOS counterpart unless you have a &lt;a href=&quot;https://amzn.to/2CgtmHG&quot;&gt;Mac&lt;/a&gt; since you need &lt;a href=&quot;https://apps.apple.com/us/app/xcode/id497799835?mt=12&quot;&gt;xCode&lt;/a&gt; which is exclusive to MacOS.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/17.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Running a Flutter App&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/17.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Running a Flutter App&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;There you have it! You&apos;re now ready to make native Android apps and Flutter apps on your Chromebook. If you enjoyed this article please leave a comment in the comments section below.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Best Chromebooks for Programming in 2020]]></title><description><![CDATA[Having trouble choosing a Chromebook as your primary development machine? With so many laptops and ChromeOS devices on the market today…]]></description><link>https://techwaifu.com/recommended-chromebooks-for-programming-2020-5734ed1a</link><guid isPermaLink="false">https://techwaifu.com/recommended-chromebooks-for-programming-2020-5734ed1a</guid><pubDate>Thu, 06 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Having trouble choosing a Chromebook as your primary development machine? With so many laptops and ChromeOS devices on the market today, purchasing a laptop is always a difficult process. Luckily for you, I&apos;ve compiled a list of the best Chromebooks for your programming needs.&lt;/p&gt;
 &lt;p&gt;The requirements for a good programming device is the same regardless of the OS. Having a decent CPU, a minimum of 8GB of RAM, and a good amount of disk space are essential for a programming laptop. Most Chromebooks come with a Core m3 which is designed for fanless systems and can get throttled under high load. Unfortunately majority of Chromebooks don&apos;t have any fans so expect a bit of throttling if you go with a fanless system. Also, expect these devices to be more expensive than your typical Chromebook due to the higher specs. &lt;/p&gt;
@@ -384,19 +384,19 @@ flutter run
 &lt;p&gt;Did you enjoy this article? If so, leave please a comment and check out if &lt;a href=&quot;https://techwaifu.com/leica-cl-worth-3000-in-2020-9cbf32a8&quot;&gt;the Leica CL still worth $3000 in 2020&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Setting Up Java, Python, Node, React, and Angular on a Chromebook]]></title><description><![CDATA[My 2013 Apple Macbook Pro's battery started to get worse in 2020 so I started looking for a replacement laptop. I ended up picking up an HP…]]></description><link>https://techwaifu.com/ultimate-guide-coding-on-chromebook-bb405513</link><guid isPermaLink="false">https://techwaifu.com/ultimate-guide-coding-on-chromebook-bb405513</guid><pubDate>Tue, 04 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My 2013 Apple Macbook Pro&apos;s battery started to get worse in 2020 so I started looking for a replacement laptop. I ended up picking up an &lt;a href=&quot;https://amzn.to/2DoOw6C&quot;&gt;HP x2 Chromebook&lt;/a&gt; as my replacement device since I wanted to try out a ChromeOS device. I don&apos;t necessarily think this is the best &quot;programming laptop&quot; due to the lack of RAM. If you end up using a Chromebook as your primary programming laptop make sure you have at least 8GB of RAM and something faster than a M3 like the &lt;a href=&quot;https://amzn.to/3hU5vfY&quot;&gt;i5 Pixelbook Go&lt;/a&gt;. I also found it difficult to set up my programming environment due to the lack of tutorials so I decided to make my own after trying a bunch of different things.&lt;/p&gt;
 &lt;h2&gt;Set up Linux (Crostini) on your Chromebook&lt;/h2&gt;
 &lt;p&gt;This guide will cover how to set up your programming environment on a Crostini supported Chromebook device. You can find a &lt;a href=&quot;https://sites.google.com/a/chromium.org/dev/chromium-os/chrome-os-systems-supporting-linux&quot;&gt;list of supported Chromebook devices here&lt;/a&gt;, but according to that doc, &quot;the Chromebooks launched before 2019 that support Linux (Beta) are listed below. Unless otherwise specified, all devices launched in 2019 will support Linux (Beta)&quot;. So newer devices will support Crostini out of the box.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/2.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Turn on linux&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/2.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Turn on linux&quot;&gt;&lt;/p&gt;
 &lt;p&gt;By default Linux is turned off, so go into the Settings app and enable the setting.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/3.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Installing linux&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/3.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Installing linux&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Follow the steps in the dialog box. The installation can take up to 10 minutes or longer depending on the specs of the device.&lt;/p&gt;
 &lt;p&gt;Once the installation is complete, you&apos;ll see a terminal app in the app tray.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/4.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verify the installation&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/5.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verify the installation&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/4.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verify the installation&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/5.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verify the installation&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Installing an IDE&lt;/h2&gt;
 &lt;p&gt;With Crostini enabled, you can also install some compatible Linux apps. I&apos;ll be installing &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VSCode&lt;/a&gt; on my Chromebook. Make sure you download the &lt;code&gt;.deb&lt;/code&gt; installer instead of the &lt;code&gt;.rpm&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/19.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Downloading VSCode&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/19.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Downloading VSCode&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Once the file is downloaded, go to your Downloads folder and double click on the &lt;code&gt;.deb&lt;/code&gt; file.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/18.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Installing VSCode&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/21.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Running VSCode&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/18.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Installing VSCode&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/21.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Running VSCode&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Setting up NPM &amp;#x26; Node&lt;/h2&gt;
 &lt;p&gt;Most frontend developers rely on NPM as their primary package manager. By default, the terminal does not have this installed, so we&apos;ll need to set it up ourselves. Run the following commands inside the terminal to install &lt;a href=&quot;https://docs.npmjs.com/cli/npm&quot;&gt;NPM&lt;/a&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo apt-get update
@@ -407,7 +407,7 @@ curl -sl https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Verify that NPM has been installed correctly by running &lt;code&gt;npm --version&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/15.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verify the NPM&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/15.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verify the NPM&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;media-ads type=&quot;blog-content&quot;&gt;&lt;/media-ads&gt;&lt;/p&gt;
 &lt;h3&gt;Installing Yarn (Optional)&lt;/h3&gt;
 &lt;p&gt;I personally prefer to use &lt;a href=&quot;https://classic.yarnpkg.com/en/&quot;&gt;Yarn&lt;/a&gt; over NPM. You can install this by running &lt;code&gt;sudo npm install -g yarn&lt;/code&gt;.&lt;/p&gt;
@@ -424,7 +424,7 @@ yarn start
 npm start
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Visit the url printed in the terminal. Usually it&apos;s &lt;a href=&quot;http://localhost:3000&quot;&gt;http://localhost:3000&lt;/a&gt;. You should see the following UI if everything is setup properly.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/6.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verifying React&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/6.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verifying React&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;media-ads type=&quot;blog-content-2&quot;&gt;&lt;/media-ads&gt;&lt;/p&gt;
 &lt;h3&gt;Setting Up a Brand New Angular Project&lt;/h3&gt;
 &lt;p&gt;If you prefer using Angular you can just as easily run a couple of commands to setup Angular.&lt;/p&gt;
@@ -437,7 +437,7 @@ cd my-angular-app
 ng serve --open
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Visit &lt;a href=&quot;http://localhost:4200&quot;&gt;http://localhost:4200&lt;/a&gt; (or the url printed in the terminal) to verify it&apos;s working properly. You should see something like the picture below.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/7.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verifying Angular&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/7.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verifying Angular&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Setting Up Java and the JDK&lt;/h2&gt;
 &lt;p&gt;You can install the &lt;a href=&quot;https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html&quot;&gt;JDK&lt;/a&gt; to run Java programs on your chromebook. The JDK also contains the JRE, so you should be able to run all Java programs on your Chromebook. Run the following command below to install the JDK.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo apt-get install default-jdk
@@ -454,24 +454,24 @@ ng serve --open
 
 java Main.java
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/8.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Runing Java on Chromebook&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/8.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Runing Java on Chromebook&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Setting Up Python 3.X&lt;/h2&gt;
 &lt;p&gt;The chromebook comes with &lt;a href=&quot;https://www.python.org/download/releases/2.7/&quot;&gt;Python 2.x&lt;/a&gt; installed by default, but you&apos;ll need to install Python 3.X yourself. Let&apos;s download &lt;a href=&quot;https://docs.conda.io/en/latest/miniconda.html&quot;&gt;Miniconda&lt;/a&gt; since it&apos;s much more barebones than something like Anaconda.&lt;/p&gt;
 &lt;p&gt;Find the Linux installers section and download the &quot;Miniconda3 Linux 64-bit&quot; file. For this tutorial, I&apos;ll be installing &lt;a href=&quot;https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh&quot;&gt;Python 3.8&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/9.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Download Miniconda for linux&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/9.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Download Miniconda for linux&quot;&gt;&lt;/p&gt;
 &lt;p&gt;After downloading the file, move &lt;code&gt;Miniconda3-latest-Linux-x86_64.sh&lt;/code&gt; from the &lt;code&gt;Downloads&lt;/code&gt; folder to &lt;code&gt;Linux Files&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/10.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Move the file&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Now open up your terminal again and type &lt;code&gt;ls&lt;/code&gt; to verify the file is there.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/11.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verify the file is there&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/11.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verify the file is there&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Once you&apos;ve confirmed the file is there, run the following command to install Python 3.8. You&apos;ll need to read through some licensing terms.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo bash Miniconda3-latest-Linux-x86_64.sh 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/12.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Reading licensing agreements&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/12.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Reading licensing agreements&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Accept the licensing agreements by typing &lt;code&gt;yes&lt;/code&gt; into the terminal.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/13.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Accepting licensing agreements&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/13.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Accepting licensing agreements&quot;&gt;&lt;/p&gt;
 &lt;p&gt;After accepting the licensing terms, type in &lt;code&gt;/opt/miniconda3&lt;/code&gt; to set install Miniconda3 to that location. You&apos;ll need to restart your terminal once all of this is complete. You can simply close the app and open another terminal instance.&lt;/p&gt;
 &lt;p&gt;In the new terminal instance, grant the proper permissions for the directory so that conda can manage the packages properly. Run the following command, but replace &lt;code&gt;ironman&lt;/code&gt; with your username. You&apos;ll find the username before the &lt;code&gt;@penguin&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/16.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Linux Username&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/16.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Linux Username&quot;&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo chown -R ironman /opt/miniconda3
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Let&apos;s start up Conda by running &lt;code&gt;source /opt/miniconda3/bin/activate&lt;/code&gt;. You can also add this into your &lt;code&gt;./bashrc&lt;/code&gt; file so you don&apos;t need to type up the whole thing everytime.&lt;/p&gt;
@@ -484,7 +484,7 @@ python_3
 python
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Run &lt;code&gt;print(&quot;Hello TechWaifu&quot;)&lt;/code&gt; to verify everything works.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/14.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Granting permissions for Miniconda3&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/14.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Granting permissions for Miniconda3&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Chromebooks have become much more useful developer tools with the release of Crostini and support of Linux Apps. You can even do Android programming with &lt;a href=&quot;https://developer.android.com/studio&quot;&gt;Android Studio&lt;/a&gt; on your Chromebook! I haven&apos;t tried this myself since 4GB of RAM is barely enough to even run VSCode. Do you use a Chromebook as your primary coding laptop? Which one do you use? Let me know in the comments section below and also check out &lt;a href=&quot;https://techwaifu.com/coding-on-an-ipad-190ccc96&quot;&gt;How to Code on an iPad&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Retrospect: Choosing The Perfect College Major]]></title><description><![CDATA[If you find yourself stuck in choosing what college degree to pursue, then don’t worry, you are not alone. Many of us do not know what we…]]></description><link>https://techwaifu.com/choosing-college-major-688412f1</link><guid isPermaLink="false">https://techwaifu.com/choosing-college-major-688412f1</guid><pubDate>Mon, 03 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;If you find yourself stuck in choosing what college degree to pursue, then don’t worry, you are not alone. Many of us do not know what we want to do with our lives until many years later, hence why many adults experience a quarter-life and mid-life crisis quite often. As you find yourself deciding what career path to pursue, let me share with you my thoughts from what I’ve experienced in college and my lessons that may or may not help you in the long run. &lt;/p&gt;
 &lt;p&gt;Many young students are left with two options to choose from: a career with good money and stability vs. a career that relates to their interests and hobbies. Between these two choices, one will usually mean accepting what society tells them is successful, while the other one means turning their backs on what they love doing. &lt;/p&gt;
