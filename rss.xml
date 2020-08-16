@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></title><description><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></description><link>https://techwaifu.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 Aug 2020 04:10:18 GMT</lastBuildDate><item><title><![CDATA[Building a Crawler for a Client-side Rendered Web App]]></title><description><![CDATA[Back in the day, websites were primarily rendered server side. This made it easy for bots to crawl and extract content from the page without…]]></description><link>https://techwaifu.com/blog/client-side-rendered-crawler-e08c0320</link><guid isPermaLink="false">https://techwaifu.com/blog/client-side-rendered-crawler-e08c0320</guid><pubDate>Sat, 15 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Back in the day, websites were primarily rendered server side. This made it easy for bots to crawl and extract content from the page without using Javascript. However in the last couple of years, we&apos;ve seen an increase of new Javascript frameworks. With the rise of client side rendered apps, it has become a bit more difficult to crawl websites since some sites require Javascript to render. Some client side rendered pages fetch more content via infinitely scrolling making it impossible for a traditional bot to crawl.  Thankfully, we can create a bot that can render Javascript to crawl these types of web apps. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></title><description><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></description><link>https://techwaifu.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 Aug 2020 16:43:53 GMT</lastBuildDate><item><title><![CDATA[Building a Crawler for a Client-side Rendered Web App]]></title><description><![CDATA[Back in the day, websites were primarily rendered server side. This made it easy for bots to crawl and extract content from the page without…]]></description><link>https://techwaifu.com/blog/client-side-rendered-crawler-e08c0320</link><guid isPermaLink="false">https://techwaifu.com/blog/client-side-rendered-crawler-e08c0320</guid><pubDate>Sat, 15 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Back in the day, websites were primarily rendered server side. This made it easy for bots to crawl and extract content from the page without using Javascript. However in the last couple of years, we&apos;ve seen an increase of new Javascript frameworks. With the rise of client side rendered apps, it has become a bit more difficult to crawl websites since some sites require Javascript to render. Some client side rendered pages fetch more content via infinitely scrolling making it impossible for a traditional bot to crawl.  Thankfully, we can create a bot that can render Javascript to crawl these types of web apps. &lt;/p&gt;
 &lt;p&gt;In this tutorial, we&apos;ll be using &lt;a href=&quot;https://github.com/puppeteer/puppeteer&quot;&gt;puppeteer&lt;/a&gt; to crawl Instagram. You can use this library to control Chromium to crawl websites. &lt;/p&gt;
 &lt;p&gt;Start by creating a new project with &lt;code&gt;npm init&lt;/code&gt;. Add puppeteer and request to your &lt;code&gt;package.json&lt;/code&gt; via:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;npm add puppeteer request
@@ -289,20 +289,20 @@ async function scrollToEndOfPage(
 &lt;p&gt;Get started by &lt;a href=&quot;https://developer.android.com/studio&quot;&gt;downloading Android Studio&lt;/a&gt;. You&apos;ll find the &lt;code&gt;.deb&lt;/code&gt; file under your &lt;code&gt;Downloads&lt;/code&gt; folder. Double click it in order to install it.&lt;/p&gt;
 &lt;h3&gt;Enabling ADB&lt;/h3&gt;
 &lt;p&gt;Since the Chromebook can run Android apps, you can actually build and run the Android app on the Chromebook itself. In the settings app, go to the linux section.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/3.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Enabling ADB&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/3.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Enabling ADB&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Click the &quot;Develop Android Apps&quot; section and toggle the feature on. You&apos;ll need to reboot the device to activate the feature.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/5.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Enabling ADB&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/5.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Enabling ADB&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;Verifying Android Studio is Setup Properly&lt;/h3&gt;
 &lt;p&gt;After enabling ADB, you can create a sample project in Android Studio and run the app. It took almost 20 minutes for &lt;a href=&quot;https://gradle.org/&quot;&gt;Gradle&lt;/a&gt; to complete the very first build. I suspect this has to do with my Chromebook having 4GB of RAM. If everything is setup correctly, you&apos;ll see the Android app running like the screenshot below.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/2.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Android Studio with Android App&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/2.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Android Studio with Android App&quot;&gt;&lt;/p&gt;
 &lt;p&gt;You&apos;ll also see the Android app will appear in your App Tray.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/6.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Android App in App Tray&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/6.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Android App in App Tray&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Setting Up Flutter&lt;/h2&gt;
 &lt;p&gt;After testing out Android Studio for native Android development, I was curious to see if you could use Flutter on a Chromebook as well and it turns out you can.
 &lt;a href=&quot;https://flutter.dev/&quot;&gt;Flutter&lt;/a&gt; is a framework that lets you write a mobile application once and it will generate an iOS and Android app. Flutter recently got support for Web as well, but it&apos;s still in beta. Make sure you follow the steps to set up Android Studio or else this won&apos;t work. You can find the &lt;a href=&quot;https://flutter.dev/docs/get-started/install/chromeos&quot;&gt;official doc for installing Flutter here&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Installing the Flutter SDK&lt;/h3&gt;
 &lt;p&gt;First download the Flutter SDK by clicking on this &lt;a href=&quot;https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_1.20.1-stable.tar.xz&quot;&gt;link&lt;/a&gt;. Make sure you move the SDK from your &lt;code&gt;Downloads&lt;/code&gt; folder to your &lt;code&gt;Linux files&lt;/code&gt; folder.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/7.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Flutter SDK&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/7.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Flutter SDK&quot;&gt;&lt;/p&gt;
 &lt;p&gt;After you download the SDK, open up your terminal and type in the following commands. This will extract the binary.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;mkdir development
 cd ~/development
@@ -312,41 +312,41 @@ tar xf ~/flutter_linux_1.20.1-stable.tar.xz
 &lt;pre&gt;&lt;code&gt;export PATH=&quot;$PATH:`pwd`/development/flutter/bin&quot;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;After updating the &lt;code&gt;~/.bashrc&lt;/code&gt; file, make sure to run &lt;code&gt;source ~/.bashrc&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/8.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Flutter Bashrc&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/8.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Flutter Bashrc&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;Verifying the Flutter SDK is Installed&lt;/h3&gt;
 &lt;p&gt;Run the following command to verify you installed Flutter correctly.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;which flutter
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You should see something like &lt;code&gt;/home/ironman/development/flutter/bin/flutter&lt;/code&gt; printed to the terminal. If nothing is printed then you most likely made a mistake earlier.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/21.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verifying Flutter SDK&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/21.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Verifying Flutter SDK&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;Downloading Development Binaries&lt;/h3&gt;
 &lt;p&gt;Run the following commands to make sure we get all the requirement dependencies. Running &lt;code&gt;flutter doctor&lt;/code&gt; will verify your environment and make sure you have everything needed to run Flutter properly. When you run &lt;code&gt;flutter doctor --android-licenses&lt;/code&gt;, you&apos;ll need to accept a couple of licensing agreements.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/10.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verifying Flutter Doctor&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/10.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Verifying Flutter Doctor&quot;&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;flutter precache
 flutter doctor
 flutter doctor --android-licenses
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;After running those commands, you&apos;ll see running &lt;code&gt;flutter doctor&lt;/code&gt; outputs something like the screenshot below. Don&apos;t worry if you see an exclamation mark by Android Studio.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/11.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verifying Flutter Doctor after installing dependencies&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/11.jpg?width=2400&amp;#x26;height=1600&quot; alt=&quot;Verifying Flutter Doctor after installing dependencies&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Also make sure you have ADB setup correctly by running &lt;code&gt;flutter devices&lt;/code&gt;. You&apos;ll see your device&apos;s name printed in the terminal.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/12.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Flutter Devices&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/12.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Flutter Devices&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;Setting Up an IDE&lt;/h3&gt;
 &lt;p&gt;I presonally don&apos;t like using Android Studio since it&apos;s a memory hog so I use &lt;a href=&quot;https://code.visualstudio.com/download&quot;&gt;VSCode&lt;/a&gt; instead. Make sure you download the &lt;code&gt;.deb&lt;/code&gt; file instead of the &lt;code&gt;.rpm&lt;/code&gt; file. After installing VSCode, install the Flutter Extension.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/19.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;VSCode Flutter Extension&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/19.jpg?width=2400&amp;#x26;height=1600&quot; alt=&quot;VSCode Flutter Extension&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;Creating your First Flutter App&lt;/h3&gt;
 &lt;p&gt;Flutter makes it super easy to create a new project. Just run the following command in the terminal and it&apos;ll automatically generate a new project.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/15.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Create Flutter Project&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/15.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Create Flutter Project&quot;&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;flutter create flutterapp
 cd flutterapp/
 flutter run
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;After running &lt;code&gt;flutter run&lt;/code&gt;, you&apos;ll see the sample app after the project successfully builds. Unfortunately, you won&apos;t be able to test out the iOS counterpart unless you have a &lt;a href=&quot;https://amzn.to/2CgtmHG&quot;&gt;Mac&lt;/a&gt; since you need &lt;a href=&quot;https://apps.apple.com/us/app/xcode/id497799835?mt=12&quot;&gt;xCode&lt;/a&gt; which is exclusive to MacOS.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/17.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Running a Flutter App&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/mobile_dev_on_chromebook/17.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Running a Flutter App&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;There you have it! You&apos;re now ready to make native Android apps and Flutter apps on your Chromebook. If you enjoyed this article please leave a comment in the comments section below.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Best Chromebooks for Programming in 2020]]></title><description><![CDATA[Having trouble choosing a Chromebook as your primary development machine? With so many laptops and ChromeOS devices on the market today…]]></description><link>https://techwaifu.com/recommended-chromebooks-for-programming-2020-5734ed1a</link><guid isPermaLink="false">https://techwaifu.com/recommended-chromebooks-for-programming-2020-5734ed1a</guid><pubDate>Thu, 06 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Having trouble choosing a Chromebook as your primary development machine? With so many laptops and ChromeOS devices on the market today, purchasing a laptop is always a difficult process. Luckily for you, I&apos;ve compiled a list of the best Chromebooks for your programming needs.&lt;/p&gt;
 &lt;p&gt;The requirements for a good programming device is the same regardless of the OS. Having a decent CPU, a minimum of 8GB of RAM, and a good amount of disk space are essential for a programming laptop. Most Chromebooks come with a Core m3 which is designed for fanless systems and can get throttled under high load. Unfortunately majority of Chromebooks don&apos;t have any fans so expect a bit of throttling if you go with a fanless system. Also, expect these devices to be more expensive than your typical Chromebook due to the higher specs. &lt;/p&gt;
 &lt;h2&gt;&lt;a href=&quot;https://amzn.to/2DLzVSL&quot;&gt;Acer Chromebook Spin 713&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/acer_chromebook_spin.jpg?width=960&amp;#x26;height=631&quot; alt=&quot;Acer Chromebook Spin 713&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/acer_chromebook_spin.jpg?width=960&amp;#x26;height=631&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Acer Chromebook Spin 713&quot;&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -391,7 +391,7 @@ flutter run
 &lt;/table&gt;
 &lt;p&gt;A bright screen that exceeds 400 nits? Check. Core i5 processor? Check. Aluminum chassis? Check. This laptop checks all the essentials for a good laptop. It&apos;s also competitively priced at $629, but you can find it on sale for $529. It also has a 3:2 aspect ratio which is pretty nice. This laptop also contains fans unlike The Galaxy Chromebook and Pixelbook Go which helps cool the laptop for compiling those large projects. Honestly, this laptop is this best bang for the buck.&lt;/p&gt;
 &lt;h2&gt;&lt;a href=&quot;https://amzn.to/31oZUrn&quot;&gt;Pixelbook Go&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/pixelbook_go.jpg?width=960&amp;#x26;height=530&quot; alt=&quot;Pixelbook Go&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/pixelbook_go.jpg?width=960&amp;#x26;height=530&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Pixelbook Go&quot;&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -436,7 +436,7 @@ flutter run
 &lt;/table&gt;
 &lt;p&gt;I like the Pixelbook Go because of the modern design with great battery performance. The keyboard is great to type on unlike thinner laptops like the original Pixelbook. 1080p is a bit underwhelming, but that&apos;s how it&apos;s able to maintain battery at 12 hours. It&apos;s also cheaper than the other options starting at $800 for the core i5 model.&lt;/p&gt;
 &lt;h2&gt;&lt;a href=&quot;https://amzn.to/33wHF68&quot;&gt;Samsung Galaxy Chromebook&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/galaxy_chromebook.jpg?width=960&amp;#x26;height=772&quot; alt=&quot;Samsung Galaxy Chromebook&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/galaxy_chromebook.jpg?width=960&amp;#x26;height=772&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Samsung Galaxy Chromebook&quot;&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -481,7 +481,7 @@ flutter run
 &lt;/table&gt;
 &lt;p&gt;This laptop is the spiritual successor to the original Google Pixelbook. It sports the same design, with an improved display. The 4k AMOLED panel is what you would expect from a Samsung device. The Samsung Galaxy Chromebook has a built-in media reader for microSD and UFS memory cards and a 360 flip and fold design. This laptop also comes with a stylus, but most Chromebook apps and Android apps have limited support for styluses. Unfortunately, the laptop also has meager battery life and overheating issues which holds it back from being the perfect Chromebook.&lt;/p&gt;
 &lt;h2&gt;&lt;a href=&quot;https://amzn.to/2Xx5ZAP&quot;&gt;Lenovo Yoga C630 Chromebook&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/lenovo_yoga.jpg?width=960&amp;#x26;height=544&quot; alt=&quot;Lenovo Yoga C630 Chromebook&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/lenovo_yoga.jpg?width=960&amp;#x26;height=544&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Lenovo Yoga C630 Chromebook&quot;&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -527,19 +527,19 @@ flutter run
 &lt;p&gt;This laptop is at the bottom of the list due to being one of the older devices. It&apos;s also heavier than the rest of the options and doesn&apos;t have the most amazing battery, but it does sport a 4k display. It sports a the iconic Lenovo design if that&apos;s what you like. For $30 more you can purchase a Pixelbook Go which has twice the battery life.&lt;/p&gt;
 &lt;h2&gt;Accessories for your Chromebook&lt;/h2&gt;
 &lt;h3&gt;&lt;a href=&quot;https://amzn.to/2PyHvmw&quot;&gt;Laptop Sleeve Case&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/laptop_sleeve.jpg?width=1498&amp;#x26;height=1298&quot; alt=&quot;Laptop Sleeve Case&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/laptop_sleeve.jpg?width=1498&amp;#x26;height=1298&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Laptop Sleeve Case&quot;&gt;&lt;/p&gt;
 &lt;p&gt;I have been using this laptop sleeve for my iPad and Chromebooks. It says it&apos;s for a Macbook, but it&apos;s compatible with any device as long as the dimensions match.&lt;/p&gt;
 &lt;h3&gt;&lt;a href=&quot;https://amzn.to/3agbtW4&quot;&gt;Aukey USB C Hub&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/usb_hub.jpg?width=1469&amp;#x26;height=1500&quot; alt=&quot;Aukey USB C Hub&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/usb_hub.jpg?width=1469&amp;#x26;height=1500&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Aukey USB C Hub&quot;&gt;&lt;/p&gt;
 &lt;p&gt;This dock will cover all your needs. It comes with 2 HDMI ports, a memory card reader, 2 USB A 3.0 ports, 2 USB A 2.0 ports, and a charging port.&lt;/p&gt;
 &lt;h3&gt;&lt;a href=&quot;https://amzn.to/3kufWZJ&quot;&gt;Xbox One Controller&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/controller.jpg?width=1257&amp;#x26;height=943&quot; alt=&quot;Xbox One Controller&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/controller.jpg?width=1257&amp;#x26;height=943&amp;#x26;isResponsive=true&quot; alt=&quot;Xbox One Controller&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Did you know you can game on a Chromebook with Stadia? I&apos;ve tested it out with my &lt;a href=&quot;https://amzn.to/3kt5OjR&quot;&gt;HP Chromebook x2&lt;/a&gt; and it works flawlessly. You can also pair this controller to your Chromebook to play Android games that are compatible with an external controller.&lt;/p&gt;
 &lt;h3&gt;&lt;a href=&quot;https://amzn.to/2CeLyS0&quot;&gt;Logitech MX Ergo Wireless Mouse&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/mouse.JPG?width=1257&amp;#x26;height=943&quot; alt=&quot;Logitech MX Ergo Wireless Mouse&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/mouse.jpg?width=1257&amp;#x26;height=943&amp;#x26;isResponsive=true&quot; alt=&quot;Logitech MX Ergo Wireless Mouse&quot;&gt;&lt;/p&gt;
 &lt;p&gt;This is the primary mouse I use when I&apos;m coding. It&apos;s a bit expensive compared to &lt;a href=&quot;https://amzn.to/2F9ir3L&quot;&gt;Logitech M570&lt;/a&gt;, but having bluetooth and an internal battery is so convenient. The MX has a better built quality compared to the M570.&lt;/p&gt;
 &lt;h3&gt;&lt;a href=&quot;https://amzn.to/3a7683j&quot;&gt;Dell 32 Inch LED Curved QHD Monitor&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/monitor.JPG?width=1257&amp;#x26;height=943&quot; alt=&quot;Dell 32 Inch LED Curved QHD Monitor&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/recommended_chromebooks/monitor.jpg?width=1257&amp;#x26;height=943&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Dell 32 Inch LED Curved QHD Monitor&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Even though Chromebooks don&apos;t have that much graphics power, they can still power a high resolution monitor. I&apos;ve tested my Pixelbook with this 32 inch monitor and my &lt;a href=&quot;https://amzn.to/2XFetWY&quot;&gt;Dell UltraSharp U3415W&lt;/a&gt; and it works perfectly fine with a dongle.&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Chromebooks are a great alternative to using a Windows laptop or a Macbook. Chromebooks with Crostini makes it much easier for programmers to install linux on their device and fulfill their programming needs. If you enjoyed this article, please leave a commend and check out how to &lt;a href=&quot;https://techwaifu.com/ultimate-guide-coding-on-chromebook-bb405513&quot;&gt;Set Up Java, Python, Node, React, and Angular on a Chromebook
@@ -628,19 +628,19 @@ flutter run
 &lt;p&gt;Did you enjoy this article? If so, leave please a comment and check out if &lt;a href=&quot;https://techwaifu.com/leica-cl-worth-3000-in-2020-9cbf32a8&quot;&gt;the Leica CL still worth $3000 in 2020&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Setting Up Java, Python, Node, React, and Angular on a Chromebook]]></title><description><![CDATA[My 2013 Apple Macbook Pro's battery started to get worse in 2020 so I started looking for a replacement laptop. I ended up picking up an HP…]]></description><link>https://techwaifu.com/ultimate-guide-coding-on-chromebook-bb405513</link><guid isPermaLink="false">https://techwaifu.com/ultimate-guide-coding-on-chromebook-bb405513</guid><pubDate>Tue, 04 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My 2013 Apple Macbook Pro&apos;s battery started to get worse in 2020 so I started looking for a replacement laptop. I ended up picking up an &lt;a href=&quot;https://amzn.to/2DoOw6C&quot;&gt;HP x2 Chromebook&lt;/a&gt; as my replacement device since I wanted to try out a ChromeOS device. I don&apos;t necessarily think this is the best &quot;programming laptop&quot; due to the lack of RAM. If you end up using a Chromebook as your primary programming laptop make sure you have at least 8GB of RAM and something faster than a M3 like the &lt;a href=&quot;https://amzn.to/3hU5vfY&quot;&gt;i5 Pixelbook Go&lt;/a&gt;. I also found it difficult to set up my programming environment due to the lack of tutorials so I decided to make my own after trying a bunch of different things.&lt;/p&gt;
 &lt;h2&gt;Set up Linux (Crostini) on your Chromebook&lt;/h2&gt;
 &lt;p&gt;This guide will cover how to set up your programming environment on a Crostini supported Chromebook device. You can find a &lt;a href=&quot;https://sites.google.com/a/chromium.org/dev/chromium-os/chrome-os-systems-supporting-linux&quot;&gt;list of supported Chromebook devices here&lt;/a&gt;, but according to that doc, &quot;the Chromebooks launched before 2019 that support Linux (Beta) are listed below. Unless otherwise specified, all devices launched in 2019 will support Linux (Beta)&quot;. So newer devices will support Crostini out of the box.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/2.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Turn on linux&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/2.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Turn on linux&quot;&gt;&lt;/p&gt;
 &lt;p&gt;By default Linux is turned off, so go into the Settings app and enable the setting.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/3.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Installing linux&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/3.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Installing linux&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Follow the steps in the dialog box. The installation can take up to 10 minutes or longer depending on the specs of the device.&lt;/p&gt;
 &lt;p&gt;Once the installation is complete, you&apos;ll see a terminal app in the app tray.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/4.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verify the installation&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/5.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verify the installation&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/4.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Verify the installation&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/5.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Verify the installation&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Installing an IDE&lt;/h2&gt;
 &lt;p&gt;With Crostini enabled, you can also install some compatible Linux apps. I&apos;ll be installing &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VSCode&lt;/a&gt; on my Chromebook. Make sure you download the &lt;code&gt;.deb&lt;/code&gt; installer instead of the &lt;code&gt;.rpm&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/19.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Downloading VSCode&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/19.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Downloading VSCode&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Once the file is downloaded, go to your Downloads folder and double click on the &lt;code&gt;.deb&lt;/code&gt; file.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/18.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Installing VSCode&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/21.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Running VSCode&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/18.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Installing VSCode&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/21.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Running VSCode&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Setting up NPM &amp;#x26; Node&lt;/h2&gt;
 &lt;p&gt;Most frontend developers rely on NPM as their primary package manager. By default, the terminal does not have this installed, so we&apos;ll need to set it up ourselves. Run the following commands inside the terminal to install &lt;a href=&quot;https://docs.npmjs.com/cli/npm&quot;&gt;NPM&lt;/a&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo apt-get update
@@ -651,7 +651,7 @@ curl -sl https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Verify that NPM has been installed correctly by running &lt;code&gt;npm --version&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/15.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verify the NPM&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/15.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Verify the NPM&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;media-ads type=&quot;blog-content&quot;&gt;&lt;/media-ads&gt;&lt;/p&gt;
 &lt;h3&gt;Installing Yarn (Optional)&lt;/h3&gt;
 &lt;p&gt;I personally prefer to use &lt;a href=&quot;https://classic.yarnpkg.com/en/&quot;&gt;Yarn&lt;/a&gt; over NPM. You can install this by running &lt;code&gt;sudo npm install -g yarn&lt;/code&gt;.&lt;/p&gt;
@@ -668,7 +668,7 @@ yarn start
 npm start
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Visit the url printed in the terminal. Usually it&apos;s &lt;a href=&quot;http://localhost:3000&quot;&gt;http://localhost:3000&lt;/a&gt;. You should see the following UI if everything is setup properly.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/6.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verifying React&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/6.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Verifying React&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;media-ads type=&quot;blog-content-2&quot;&gt;&lt;/media-ads&gt;&lt;/p&gt;
 &lt;h3&gt;Setting Up a Brand New Angular Project&lt;/h3&gt;
 &lt;p&gt;If you prefer using Angular you can just as easily run a couple of commands to setup Angular.&lt;/p&gt;
@@ -681,7 +681,7 @@ cd my-angular-app
 ng serve --open
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Visit &lt;a href=&quot;http://localhost:4200&quot;&gt;http://localhost:4200&lt;/a&gt; (or the url printed in the terminal) to verify it&apos;s working properly. You should see something like the picture below.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/7.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verifying Angular&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/7.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Verifying Angular&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Setting Up Java and the JDK&lt;/h2&gt;
 &lt;p&gt;You can install the &lt;a href=&quot;https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html&quot;&gt;JDK&lt;/a&gt; to run Java programs on your chromebook. The JDK also contains the JRE, so you should be able to run all Java programs on your Chromebook. Run the following command below to install the JDK.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo apt-get install default-jdk
@@ -698,24 +698,24 @@ ng serve --open
 
 java Main.java
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/8.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Runing Java on Chromebook&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/8.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Runing Java on Chromebook&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Setting Up Python 3.X&lt;/h2&gt;
 &lt;p&gt;The chromebook comes with &lt;a href=&quot;https://www.python.org/download/releases/2.7/&quot;&gt;Python 2.x&lt;/a&gt; installed by default, but you&apos;ll need to install Python 3.X yourself. Let&apos;s download &lt;a href=&quot;https://docs.conda.io/en/latest/miniconda.html&quot;&gt;Miniconda&lt;/a&gt; since it&apos;s much more barebones than something like Anaconda.&lt;/p&gt;
 &lt;p&gt;Find the Linux installers section and download the &quot;Miniconda3 Linux 64-bit&quot; file. For this tutorial, I&apos;ll be installing &lt;a href=&quot;https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh&quot;&gt;Python 3.8&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/9.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Download Miniconda for linux&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/9.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Download Miniconda for linux&quot;&gt;&lt;/p&gt;
 &lt;p&gt;After downloading the file, move &lt;code&gt;Miniconda3-latest-Linux-x86_64.sh&lt;/code&gt; from the &lt;code&gt;Downloads&lt;/code&gt; folder to &lt;code&gt;Linux Files&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/10.png?width=2400&amp;#x26;height=1600&quot; alt=&quot;Move the file&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/10.jpg?width=2400&amp;#x26;height=1600&quot; alt=&quot;Move the file&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Now open up your terminal again and type &lt;code&gt;ls&lt;/code&gt; to verify the file is there.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/11.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Verify the file is there&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/11.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Verify the file is there&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Once you&apos;ve confirmed the file is there, run the following command to install Python 3.8. You&apos;ll need to read through some licensing terms.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo bash Miniconda3-latest-Linux-x86_64.sh 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/12.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Reading licensing agreements&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/12.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Reading licensing agreements&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Accept the licensing agreements by typing &lt;code&gt;yes&lt;/code&gt; into the terminal.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/13.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Accepting licensing agreements&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/13.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Accepting licensing agreements&quot;&gt;&lt;/p&gt;
 &lt;p&gt;After accepting the licensing terms, type in &lt;code&gt;/opt/miniconda3&lt;/code&gt; to set install Miniconda3 to that location. You&apos;ll need to restart your terminal once all of this is complete. You can simply close the app and open another terminal instance.&lt;/p&gt;
 &lt;p&gt;In the new terminal instance, grant the proper permissions for the directory so that conda can manage the packages properly. Run the following command, but replace &lt;code&gt;ironman&lt;/code&gt; with your username. You&apos;ll find the username before the &lt;code&gt;@penguin&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/16.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Linux Username&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/16.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Linux Username&quot;&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo chown -R ironman /opt/miniconda3
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Let&apos;s start up Conda by running &lt;code&gt;source /opt/miniconda3/bin/activate&lt;/code&gt;. You can also add this into your &lt;code&gt;./bashrc&lt;/code&gt; file so you don&apos;t need to type up the whole thing everytime.&lt;/p&gt;
@@ -728,7 +728,7 @@ python_3
 python
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Run &lt;code&gt;print(&quot;Hello TechWaifu&quot;)&lt;/code&gt; to verify everything works.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/14.png?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&quot; alt=&quot;Granting permissions for Miniconda3&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/chromebook_coding/14.jpg?width=2400&amp;#x26;height=1600&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Granting permissions for Miniconda3&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Chromebooks have become much more useful developer tools with the release of Crostini and support of Linux Apps. You can even do Android programming with &lt;a href=&quot;https://developer.android.com/studio&quot;&gt;Android Studio&lt;/a&gt; on your Chromebook! I haven&apos;t tried this myself since 4GB of RAM is barely enough to even run VSCode. Do you use a Chromebook as your primary coding laptop? Which one do you use? Let me know in the comments section below and also check out &lt;a href=&quot;https://techwaifu.com/coding-on-an-ipad-190ccc96&quot;&gt;How to Code on an iPad&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Retrospect: Choosing The Perfect College Major]]></title><description><![CDATA[If you find yourself stuck in choosing what college degree to pursue, then don’t worry, you are not alone. Many of us do not know what we…]]></description><link>https://techwaifu.com/choosing-college-major-688412f1</link><guid isPermaLink="false">https://techwaifu.com/choosing-college-major-688412f1</guid><pubDate>Mon, 03 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;If you find yourself stuck in choosing what college degree to pursue, then don’t worry, you are not alone. Many of us do not know what we want to do with our lives until many years later, hence why many adults experience a quarter-life and mid-life crisis quite often. As you find yourself deciding what career path to pursue, let me share with you my thoughts from what I’ve experienced in college and my lessons that may or may not help you in the long run. &lt;/p&gt;
 &lt;p&gt;Many young students are left with two options to choose from: a career with good money and stability vs. a career that relates to their interests and hobbies. Between these two choices, one will usually mean accepting what society tells them is successful, while the other one means turning their backs on what they love doing. &lt;/p&gt;
@@ -1138,15 +1138,15 @@ That&apos;s not to say road trips are impossible with Teslas. There are Supercha
 &lt;p&gt;Don&apos;t start these problems by busting out code. Start by writing down all the ideas that come to my head. For example, if they ask you to get the top K elements of an array, just write down all the ideas that come to your head even if they sound crazy. This will also allow you and your interviewer to bounce ideas off each other. &lt;/p&gt;
 &lt;p&gt;Another trick I learned along the way is if you&apos;re unsure of the most optimized answer or an answer in general, start with the brute force solution. Once you figure that out, try to bounce ideas off with your interviewer.&lt;/p&gt;
 &lt;h3&gt;Microsoft&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/fang_offers/microsoft.jpg?width=1600&amp;#x26;height=900&quot; alt=&quot;Microsoft logo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/fang_offers/microsoft.jpg?width=1600&amp;#x26;height=900&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Microsoft logo&quot;&gt;&lt;/p&gt;
 &lt;p&gt;I actually didn&apos;t apply to Microsoft. Rather Microsoft reached out to me for a hiring event. Instead of doing a phone interview, I had to complete an online coding assignment in an hour. After I finished the assignment, the recruiter reached out to chat and scheduled a date for an onsite interview. Microsoft flew me to Redmond and paid for the flight, food, and the hotel. I came in a day earlier to check out the city, visited common tourist areas, and I even stopped by the original Starbucks shop. ‪The next day, I came for the on-site, which had 4 rounds with each being 45 minutes long. I also had a System Design round.&lt;/p&gt;
 &lt;h3&gt;Google&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/fang_offers/google.jpg?width=1400&amp;#x26;height=1050&quot; alt=&quot;Google logo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/fang_offers/google.jpg?width=1400&amp;#x26;height=1050&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Google logo&quot;&gt;&lt;/p&gt;
 &lt;p&gt;This was actually the 2nd time I interviewed with Google. The first time did not go so well, so I really wanted to redeem myself this time. Also, since I had other on-sites coming up and an offer from Microsoft, Google let me skip the phone interview.&lt;/p&gt;
 &lt;p&gt;I interviewed at the Sunnyvale site which is where their Google Cloud team is located. The on-site had 4 rounds with each round being 45 minutes long. They also have a Googler take you out to lunch at the Google cafeteria after the 2nd interview. I would say this was the hardest of all my interviews. I heard Google has a behavioral round to gauge your Googleyness now, but I didn&apos;t have one of those.&lt;/p&gt;
 &lt;p&gt;After you finish your interviews, the interviewers submit their feedback and it goes into a packet for a hiring committee to review. If they give the thumbs up, then you start the project fit calls. These calls are pretty informal where you and a potential manager chat about the team and what you want to do. After these calls, you select one of them that you&apos;re most interested in.&lt;/p&gt;
 &lt;h3&gt;Uber&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/fang_offers/uber.png?width=2000&amp;#x26;height=746&quot; alt=&quot;Uber logo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/fang_offers/uber.jpg?width=2000&amp;#x26;height=746&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Uber logo&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Uber has a couple of offices with some in Palo Alto, but their main HQ is in SF which is where they conducted the interviews. But thankfully, Uber was considerate enough to provide me with $200 of Uber credits so I didn&apos;t have to worry about driving to SF and back.&lt;/p&gt;
 &lt;p&gt;Uber&apos;s on-site consists of 3 technical rounds and 2 behavioral rounds. They allowed me to bring my laptop and code out their coding questions on my device. I really enjoyed this since it felt more practical. I also liked having 45 minutes to just talk with the manager and a cultural bar raiser. The cultural bar raiser is someone at Uber who isn&apos;t on the team I&apos;m interviewing for. Talking to him gave me an opportunity to learn about what others thought about the company. It felt like they really value culture fit as much as technical prowess.&lt;/p&gt;
 &lt;h3&gt;Facebook&lt;/h3&gt;
@@ -1192,7 +1192,7 @@ That&apos;s not to say road trips are impossible with Teslas. There are Supercha
 &lt;p&gt;This isn&apos;t a comprehensive list of all the courses that can be transferred. If you&apos;re curious on which credits you can transfer over check out these links: &lt;a href=&quot;https://www.ucsd.edu/catalog/pdf/APC-chart.pdf&quot;&gt;Transferable AP Credit&lt;/a&gt; and &lt;a href=&quot;https://assist.org&quot;&gt;Transferable Credits from Other Universities&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I&apos;m not going to list the Professor since a lot has change since 2012, but I&apos;ll mention some noteworthy professors to avoid or recommend. I would use &lt;a href=&quot;https://www.ratemyprofessors.com/&quot;&gt;RateMyProfessors&lt;/a&gt; to check for any red flags when figuring out which courses to take and with who.&lt;/p&gt;
 &lt;h2&gt;Fall Quarter 2012&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/four_year_plan_ucsd/ucsd_bear.jpg?width=1024&amp;#x26;height=768&quot; alt=&quot;UCSD Bear&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/four_year_plan_ucsd/ucsd_bear.jpg?width=1024&amp;#x26;height=768&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;UCSD Bear&quot;&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1400,7 +1400,7 @@ That&apos;s not to say road trips are impossible with Teslas. There are Supercha
 &lt;p&gt;If you&apos;re a CS major, I recommend paying attention in CSE 100. You&apos;ll start to understand Leetcode Medium questions by taking this course. You&apos;ll learn the basics of Heaps, Graph Theory, and Graph Search algorithms.&lt;/p&gt;
 &lt;p&gt;CSE 110 was one of my favorite courses at UCSD. The professor gives you guys a theme and you form a group with other students to build an app on that theme. My team built an Android App that sent you reminders when you reached certain destinations.&lt;/p&gt;
 &lt;h2&gt;Spring Quarter 2014&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/four_year_plan_ucsd/cse_101.jpg?width=1024&amp;#x26;height=774&quot; alt=&quot;CSE 101&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/four_year_plan_ucsd/cse_101.jpg?width=1024&amp;#x26;height=774&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;CSE 101&quot;&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1439,7 +1439,7 @@ That&apos;s not to say road trips are impossible with Teslas. There are Supercha
 &lt;iframe style=&quot;width:120px;height:240px;&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; src=&quot;//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=US&amp;source=ss&amp;ref=as_ss_li_til&amp;ad_type=product_link&amp;tracking_id=onew1ng3dang3-20&amp;language=en_US&amp;marketplace=amazon&amp;region=US&amp;placement=1783554878&amp;asins=1783554878&amp;linkId=fabb7959ed3a1e07ee902ba839454e51&amp;show_border=true&amp;link_opens_in_new_window=true&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;h2&gt;Summer 2014&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/four_year_plan_ucsd/coupons_internship.jpg?width=1024&amp;#x26;height=768&quot; alt=&quot;Coupons Internship&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/four_year_plan_ucsd/coupons_internship.jpg?width=1024&amp;#x26;height=768&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Coupons Internship&quot;&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1585,7 +1585,7 @@ That&apos;s not to say road trips are impossible with Teslas. There are Supercha
 &lt;p&gt;CSE 123 one of those courses I took to fulfill the Upper Div Electives requirement.&lt;/p&gt;
 &lt;p&gt;I took BILD 3 to fulfill some of Revelle College&apos;s &lt;a href=&quot;https://revelle.ucsd.edu/academics/general-education/nat-science.html&quot;&gt;Natural Science Requirements&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Summer 2015&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/blogImages/four_year_plan_ucsd/intuit.jpg?width=1024&amp;#x26;height=768&quot; alt=&quot;Intuit&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/four_year_plan_ucsd/intuit.jpg?width=1024&amp;#x26;height=768&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Intuit&quot;&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -2422,29 +2422,6 @@ Sometimes your device isn&apos;t powerful enough and you need a bigger and badde
 &lt;li&gt;&lt;a href=&quot;https://apps.apple.com/us/app/play-js-javascript-ide/id1423330822&quot;&gt;play.js&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://apps.apple.com/us/app/pythonista-3/id1085978097&quot;&gt;Pythonista&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://apps.apple.com/app/id1462586500&quot;&gt;Juno&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Pink & White Minimalist Gaming Setup]]></title><description><![CDATA[Whether you want to start your twitch streaming career or you want to build a nice set up for your gaming sessions, there are many options…]]></description><link>https://techwaifu.com/pink-white-minimalist-gaming-setup-48418c33</link><guid isPermaLink="false">https://techwaifu.com/pink-white-minimalist-gaming-setup-48418c33</guid><pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Whether you want to start your twitch streaming career or you want to build a nice set up for your gaming sessions, there are many options for gamers of every level. Most PC gaming setups have a dark edgy ‘macho’ vibe, so if you&apos;re the opposite and want a setup that matches your soft and girly aesthetics, below are seven things I&apos;d recommend to get started.&lt;/p&gt;
-&lt;h3&gt;1. &lt;a href=&quot;https://amzn.to/38pC6H2&quot;&gt;Quartz Razer Keyboard&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;When looking for a gaming keyboard, you’ll want to keep in mind what switches it uses. The Quartz Razer keyboard is a mechanical keyboard, so the keys are louder and more robust. Just a personal preference, but I enjoy when my keys feel more clicky and responsive. Another positive aspect is that the keys are raised a bit up so it’s easy to clean. You can  customize the lighting for each key to your liking and it also includes a removable wrist rest that makes typing comfortable. I’ve played long hours on Overwatch and Monster hunter on this keyboard and I have no complaints. &lt;/p&gt;
-&lt;h3&gt;2. &lt;a href=&quot;https://amzn.to/2ZEVNXi&quot;&gt;Razer Headphones&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;These headphones are definitely a 10/10 in my book. What’s great about these headphones is that they are lightweight and over-the-ears. They reduce background and ambient noises and they still remain comfortable after wearing them for a long time. It comes with a built-in mic that my friends have no issue in hearing me talk. You can also add the neko ears and feel cute even after a streak of losing matches. &lt;/p&gt;
-&lt;h3&gt;3. &lt;a href=&quot;https://amzn.to/3dZ0q3u&quot;&gt;Razer Basilisk mouse&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Absolutely love this mouse! This is the first gamer mouse I&apos;ve used and I was surprised at how smooth it was. I have small hands but I have a good grip of the mouse so it always feels comfortable. I’ll be honest and say the pink color was the main reason why I bought it but I’m happy the quality has been amazing. Not only does it feel more luxurious than cheap, it is also fully customizable from DPI settings and lets me match the glow of my keyboard making my setup 100x slicker. &lt;/p&gt;
-&lt;h3&gt;4. &lt;a href=&quot;https://amzn.to/31K26f8&quot;&gt;Razer Quartz Headset Stand&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;No headset is complete without its stand. The first week Razer had launched that Razer Quartz stand, I was devastated at how it sold out so quickly. This stand is definitely one of the pieces that gives your setup a nice touch. It has multiple 3x Port USB Hub which makes it extremely convenient to  plug in your essentials usb cables.  You can also customize the LED color to your personal taste. &lt;/p&gt;
-&lt;h3&gt;5. Samsung 351 Series S32F351&lt;/h3&gt;
-&lt;p&gt;Big white monitor to compliment your gaming needs. It is lightweight,  good build quality, and worth it for a simple setup. Although the screen resolution is not the greatest, the games still look decent and have high contrast. You can easily adjust the brightness and contrast of your screen. Since this monitor is no longer on the market, I would recommend to friends the &lt;a href=&quot;https://amzn.to/2CarEa8&quot;&gt;Samsung 32 inch CF391 Curved Monitor&lt;/a&gt; which is also a good monitor for a new simple PC build. &lt;/p&gt;
-&lt;h3&gt;6. &lt;a href=&quot;https://amzn.to/2NWByPq&quot;&gt;Pioneer Pro DJ DM-40-W&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;These speakers have not let me down. For great quality, this is an excellent cheaper alternative to studio speakers. I recommend using them as computer desktop speakers. They are amazing while you game or work.&lt;/p&gt;
-&lt;h3&gt;7. LINNMON / ALEX&lt;/h3&gt;
-&lt;p&gt;Most importantly, no gaming setup is complete without a white desk. You’re welcome to purchase any desk of your choice. For me, I like my desk to be as simple as possible. This desk from IKEA does a good job achieving the minimalist look with a good spacious size to still be useful. &lt;/p&gt;
-&lt;h3&gt;Links&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://amzn.to/2D1uXRx&quot;&gt;Razer DVA headset&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://amzn.to/2NWByPq&quot;&gt;Pioneer Pro DJ DM-40-W&lt;/a&gt; &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://amzn.to/31K26f8&quot;&gt;Razer Quartz Headset Stand&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://amzn.to/3dZ0q3u&quot;&gt;Razer Basilisk mouse&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://amzn.to/2ZEVNXi&quot;&gt;Razer Headphones&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://amzn.to/2CarEa8&quot;&gt;Samsung 32 inch CF391 Curved Monitor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[How to host a website for free]]></title><description><![CDATA[I recently started my own blog site. It was super simple to make and cost me almost nothing. I’ll be teaching you guys step by step how you…]]></description><link>https://techwaifu.com/how-to-host-a-website-for-free-5165ea28</link><guid isPermaLink="false">https://techwaifu.com/how-to-host-a-website-for-free-5165ea28</guid><pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I recently started my own blog site. It was super simple to make and cost me almost nothing. I’ll be teaching you guys step by step how you can set up your own website as well.&lt;/p&gt;
 &lt;h2&gt;Set up a Github pages&lt;/h2&gt;
 &lt;p&gt;You’ll need a basic level of programming in order to do this, but don’t worry, I’ll guide you through it.
@@ -2516,4 +2493,27 @@ First create an account on Github if you don’t have one already. &lt;/p&gt;
 &lt;p&gt;If you don&apos;t enable HTTPS, Chrome may consider your site as insecure. In order to make it secure, head over to your repository&apos;s settings and toggle on &quot;Enforce HTTPS&quot;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/blogImages/free_website/enable_https.jpg?width=991&amp;#x26;height=664&quot; alt=&quot;HTTPS&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;Free Image Hosting&lt;/h2&gt;
-&lt;p&gt;You can either check in your images directly to your Github repository or you can host them somewhere else. I’m using Imgur since they won’t delete any uploaded images if they’re uploaded from an account. Check out this &lt;a href=&quot;https://thomas.vanhoutte.be/miniblog/imgur-thumbnail-trick/&quot;&gt;link&lt;/a&gt; to customize the size of the images as well.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;You can either check in your images directly to your Github repository or you can host them somewhere else. I’m using Imgur since they won’t delete any uploaded images if they’re uploaded from an account. Check out this &lt;a href=&quot;https://thomas.vanhoutte.be/miniblog/imgur-thumbnail-trick/&quot;&gt;link&lt;/a&gt; to customize the size of the images as well.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Pink & White Minimalist Gaming Setup]]></title><description><![CDATA[Whether you want to start your twitch streaming career or you want to build a nice set up for your gaming sessions, there are many options…]]></description><link>https://techwaifu.com/pink-white-minimalist-gaming-setup-48418c33</link><guid isPermaLink="false">https://techwaifu.com/pink-white-minimalist-gaming-setup-48418c33</guid><pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Whether you want to start your twitch streaming career or you want to build a nice set up for your gaming sessions, there are many options for gamers of every level. Most PC gaming setups have a dark edgy ‘macho’ vibe, so if you&apos;re the opposite and want a setup that matches your soft and girly aesthetics, below are seven things I&apos;d recommend to get started.&lt;/p&gt;
+&lt;h3&gt;1. &lt;a href=&quot;https://amzn.to/38pC6H2&quot;&gt;Quartz Razer Keyboard&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;When looking for a gaming keyboard, you’ll want to keep in mind what switches it uses. The Quartz Razer keyboard is a mechanical keyboard, so the keys are louder and more robust. Just a personal preference, but I enjoy when my keys feel more clicky and responsive. Another positive aspect is that the keys are raised a bit up so it’s easy to clean. You can  customize the lighting for each key to your liking and it also includes a removable wrist rest that makes typing comfortable. I’ve played long hours on Overwatch and Monster hunter on this keyboard and I have no complaints. &lt;/p&gt;
+&lt;h3&gt;2. &lt;a href=&quot;https://amzn.to/2ZEVNXi&quot;&gt;Razer Headphones&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;These headphones are definitely a 10/10 in my book. What’s great about these headphones is that they are lightweight and over-the-ears. They reduce background and ambient noises and they still remain comfortable after wearing them for a long time. It comes with a built-in mic that my friends have no issue in hearing me talk. You can also add the neko ears and feel cute even after a streak of losing matches. &lt;/p&gt;
+&lt;h3&gt;3. &lt;a href=&quot;https://amzn.to/3dZ0q3u&quot;&gt;Razer Basilisk mouse&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Absolutely love this mouse! This is the first gamer mouse I&apos;ve used and I was surprised at how smooth it was. I have small hands but I have a good grip of the mouse so it always feels comfortable. I’ll be honest and say the pink color was the main reason why I bought it but I’m happy the quality has been amazing. Not only does it feel more luxurious than cheap, it is also fully customizable from DPI settings and lets me match the glow of my keyboard making my setup 100x slicker. &lt;/p&gt;
+&lt;h3&gt;4. &lt;a href=&quot;https://amzn.to/31K26f8&quot;&gt;Razer Quartz Headset Stand&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;No headset is complete without its stand. The first week Razer had launched that Razer Quartz stand, I was devastated at how it sold out so quickly. This stand is definitely one of the pieces that gives your setup a nice touch. It has multiple 3x Port USB Hub which makes it extremely convenient to  plug in your essentials usb cables.  You can also customize the LED color to your personal taste. &lt;/p&gt;
+&lt;h3&gt;5. Samsung 351 Series S32F351&lt;/h3&gt;
+&lt;p&gt;Big white monitor to compliment your gaming needs. It is lightweight,  good build quality, and worth it for a simple setup. Although the screen resolution is not the greatest, the games still look decent and have high contrast. You can easily adjust the brightness and contrast of your screen. Since this monitor is no longer on the market, I would recommend to friends the &lt;a href=&quot;https://amzn.to/2CarEa8&quot;&gt;Samsung 32 inch CF391 Curved Monitor&lt;/a&gt; which is also a good monitor for a new simple PC build. &lt;/p&gt;
+&lt;h3&gt;6. &lt;a href=&quot;https://amzn.to/2NWByPq&quot;&gt;Pioneer Pro DJ DM-40-W&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;These speakers have not let me down. For great quality, this is an excellent cheaper alternative to studio speakers. I recommend using them as computer desktop speakers. They are amazing while you game or work.&lt;/p&gt;
+&lt;h3&gt;7. LINNMON / ALEX&lt;/h3&gt;
+&lt;p&gt;Most importantly, no gaming setup is complete without a white desk. You’re welcome to purchase any desk of your choice. For me, I like my desk to be as simple as possible. This desk from IKEA does a good job achieving the minimalist look with a good spacious size to still be useful. &lt;/p&gt;
+&lt;h3&gt;Links&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://amzn.to/2D1uXRx&quot;&gt;Razer DVA headset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://amzn.to/2NWByPq&quot;&gt;Pioneer Pro DJ DM-40-W&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://amzn.to/31K26f8&quot;&gt;Razer Quartz Headset Stand&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://amzn.to/3dZ0q3u&quot;&gt;Razer Basilisk mouse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://amzn.to/2ZEVNXi&quot;&gt;Razer Headphones&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://amzn.to/2CarEa8&quot;&gt;Samsung 32 inch CF391 Curved Monitor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item></channel></rss>
