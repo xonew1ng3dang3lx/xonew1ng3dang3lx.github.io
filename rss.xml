@@ -1,4 +1,248 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></title><description><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></description><link>https://techwaifu.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 15 Aug 2020 22:18:01 GMT</lastBuildDate><item><title><![CDATA[Machine Learning to Increase Photo Resolution with Pixelmator Pro]]></title><description><![CDATA[Ever wanted the power to increase the resolution of images like in those cop shows? Well now you can with Pixelmator Pro using the ML Super…]]></description><link>https://techwaifu.com/blog/machine-learning-photos-46a2d49c</link><guid isPermaLink="false">https://techwaifu.com/blog/machine-learning-photos-46a2d49c</guid><pubDate>Tue, 11 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Ever wanted the power to increase the resolution of images like in those cop shows? Well now you can with Pixelmator Pro using the &lt;a href=&quot;https://www.pixelmator.com/blog/2019/12/17/all-about-the-new-ml-super-resolution-feature-in-pixelmator-pro/&quot;&gt;ML Super Resolution&lt;/a&gt; feature. You can read that linked blog post for more details on how it works, but the TLDR is Pixelmator uses machine learning to predict how the image should look. They trained the app with a large dataset of images to train a model on how to upscale an image. This app only works for Mac OSX and they recommend using a new Mac for the fastest performance like the new &lt;a href=&quot;https://amzn.to/2Dwfda4&quot;&gt;Macbook Pro 16 inch&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></title><description><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></description><link>https://techwaifu.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 Aug 2020 00:04:52 GMT</lastBuildDate><item><title><![CDATA[Building a Crawler for a Client-side Rendered Web App]]></title><description><![CDATA[Back in the day, websites were primarily rendered server side. This made it easy for bots to crawl and extract content from the page without…]]></description><link>https://techwaifu.com/crawler</link><guid isPermaLink="false">https://techwaifu.com/crawler</guid><pubDate>Sat, 15 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Back in the day, websites were primarily rendered server side. This made it easy for bots to crawl and extract content from the page without using Javascript. However in the last couple of years, we&apos;ve seen an increase of new Javascript frameworks. With the rise of client side rendered apps, it has become a bit more difficult to crawl websites since some sites require Javascript to render. Some client side rendered pages fetch more content via infinitely scrolling making it impossible for a traditional bot to crawl.  Thankfully, we can create a bot that can render Javascript to crawl these types of web apps. &lt;/p&gt;
+&lt;p&gt;In this tutorial, we&apos;ll be using &lt;a href=&quot;https://github.com/puppeteer/puppeteer&quot;&gt;puppeteer&lt;/a&gt; to crawl Instagram. You can use this library to control Chromium to crawl websites. &lt;/p&gt;
+&lt;p&gt;Start by creating a new project with &lt;code&gt;npm init&lt;/code&gt;. Add puppeteer and request to your &lt;code&gt;package.json&lt;/code&gt; via:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm add puppeteer request
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Your &lt;code&gt;package.json&lt;/code&gt; will look something like this afterwards.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+  &quot;name&quot;: &quot;infinite-crawler&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;#x26;&amp;#x26; exit 1&quot;
+  },
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;dependencies&quot;: {
+    &quot;puppeteer&quot;: &quot;^5.2.1&quot;,
+    &quot;request&quot;: &quot;^2.88.2&quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now let&apos;s create an &lt;code&gt;index.js&lt;/code&gt; file and populate it with the following code. We&apos;ll be setting headless to false to visualize what&apos;s going on.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const fs = require(&apos;fs&apos;);
+const puppeteer = require(&apos;puppeteer&apos;);
+
+const instagramUrl = &quot;https://www.instagram.com/&quot;;
+
+(async function main() {
+  // Set up browser and page.
+  const browser = await puppeteer.launch({
+    headless: false,
+    args: [&apos;--no-sandbox&apos;, &apos;--disable-setuid-sandbox&apos;],
+  });
+  const page = await browser.newPage();
+  page.setViewport({ width: 1600, height: 1600 });
+
+  const url = &quot;https://www.instagram.com/thejenkinscomic&quot;;
+  await page.goto(url);
+
+  // Close the browser.
+  await browser.close();
+})();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let&apos;s test this out by running &lt;code&gt;node index&lt;/code&gt;. If done correctly, you&apos;ll see Chrome open up the instagram profile for thejenkinscomic.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/crawler/crawler.jpg?width=960&amp;#x26;height=1101&amp;#x26;isResponsive=true&quot; alt=&quot;Instagram&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Next, let&apos;s add some code that will scroll through the page to fetch more Instagram posts. The &lt;code&gt;scrollToEndOfPage&lt;/code&gt; function will continue scrolling until it hits the end of the page.&lt;/p&gt;
+&lt;p&gt;Instagram does something interesting to optimize for performance. Instagram optimizes the number of divs on the page by reusing the previously created divs instead of creating new divs on the page. This is the same concept used by Android Apps with a &lt;a href=&quot;https://developer.android.com/guide/topics/ui/layout/recyclerview&quot;&gt;RecyclerView&lt;/a&gt;. Because the page is constantly changing, we&apos;ll need to scrape the page each time we scroll to make sure we have all the items. This also prevents crawlers that don&apos;t use Javascript from scraping the profile completely.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;async function scrollToEndOfPage(
+    page,
+    extractImgLinks = () =&gt; {},
+) {
+    let items = [];
+    try {
+        let previousHeight;
+        while (true) {
+            const curHeight = await page.evaluate(&apos;document.body.scrollHeight&apos;);
+            if (previousHeight === curHeight) {
+                break;
+            }
+            previousHeight = curHeight;
+            await page.evaluate(&apos;window.scrollTo(0, document.body.scrollHeight)&apos;);
+            await page.waitForFunction(`document.body.scrollHeight &gt; ${previousHeight}`);
+            await page.waitFor(3500);
+            const links = await page.evaluate(extractImgLinks).catch(err =&gt; {
+                console.log(err);
+                return [];
+            });
+            items = [...items, ...links];
+        }
+    } catch (e) {
+    }
+    return items;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Update the &lt;code&gt;main&lt;/code&gt; function to call the scroller and then run &lt;code&gt;node index&lt;/code&gt;. This time the bot will open Instagram and scroll until there are no more posts left to fetch.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;(async function main() {
+
+  ...
+  await scrollToEndOfPage(page);
+
+  // Close the browser.
+  await browser.close();
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/crawler/srcset.jpg?width=522&amp;#x26;height=401&amp;#x26;isResponsive=true&quot; alt=&quot;Instagram srcset&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Now we&apos;ll need to create a function that will scrape all the img tags. If you inspect the DOM of Instagram, you&apos;ll notice the posts have a &lt;code&gt;src&lt;/code&gt; and &lt;code&gt;srcset&lt;/code&gt;. For the sake of simplicity, we&apos;ll extract the &lt;code&gt;src&lt;/code&gt;, but if you&apos;re feeling ambitious you can scrape the srcset and grab the highest resolution image. You can learn more about &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images&quot;&gt;srcset&lt;/a&gt; from this link.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// Finds all links with images as a child.
+function extractImgLinks() {
+    const extractedElements = document.querySelectorAll(&apos;a img&apos;);
+    const items = [];
+    for (let element of extractedElements) {
+        items.push(element.src)
+    }
+    return items;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Update the &lt;code&gt;scrollToEndOfPage&lt;/code&gt; inside &lt;code&gt;main&lt;/code&gt; to scrape all the images using the &lt;code&gt;extractImgLinks&lt;/code&gt; function we wrote. Pass the function we just wrote to &lt;code&gt;scrollToEndOfPage&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;(async function main() {
+    ...
+    const links = await scrollToEndOfPage(page, extractImgLinks);
+    console.log(links);
+     
+    ...
+    await browser.close();
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, we&apos;ll need a function to download and save all the images that we scraped.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function download(url, path) {
+    const fileName = url.substring(url.lastIndexOf(&quot;/&quot;));
+    const outFile = fileName.indexOf(&quot;?&quot;) &gt;= 0 ? path + fileName.substring(0, fileName.indexOf(&quot;?&quot;))  : path+ fileName;
+
+    return new Promise((resolve) =&gt; {
+        request.head(url, (err) =&gt; {
+            request(url)
+                .on(&apos;error&apos;, function (err) {
+                    console.log(err);
+                    resolve();
+                })
+                .pipe(fs.createWriteStream(outFile))
+                .on(&apos;close&apos;, () =&gt; {
+                    resolve();
+                })
+        });
+    });
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We&apos;ll also need to add code to create an output directory. Because Instagram reuses the DOM to render the page, we might end up with duplicate links. The &lt;code&gt;removeDuplicates&lt;/code&gt; function will filter any duplicate links.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const fs = require(&apos;fs&apos;);
+
+(async function main() {
+    ...
+
+    // Creates a directory to store the images
+    const username = url.substring(instagramUrl.length);
+    const dir = &quot;./&quot; + username;
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir);
+    }
+    
+    // Filter duplicate links and downloads all the images
+    function removeDuplicates(array) {
+        return array.filter((a, b) =&gt; array.indexOf(a) === b)
+    };
+    const linksWithoutDuplicates = removeDuplicates(links);
+    await Promise.all(links.map(item =&gt; download(item, dir)));
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here&apos;s the final code. This is obviously very basic and can be updated to grab a higher resolution image via the &lt;code&gt;srcset&lt;/code&gt;. Other improvements include passing the profile url by args instead of hardcoding it.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const fs = require(&apos;fs&apos;);
+const puppeteer = require(&apos;puppeteer&apos;);
+const request = require(&apos;request&apos;);
+
+const instagramUrl = &quot;https://www.instagram.com/&quot;;
+
+function download(url, path) {
+    const fileName = url.substring(url.lastIndexOf(&quot;/&quot;));
+    const outFile = fileName.indexOf(&quot;?&quot;) &gt;= 0 ? path + fileName.substring(0, fileName.indexOf(&quot;?&quot;))  : path+ fileName;
+
+    return new Promise((resolve) =&gt; {
+        request.head(url, (err) =&gt; {
+            request(url)
+                .on(&apos;error&apos;, function (err) {
+                    console.log(err);
+                    resolve();
+                })
+                .pipe(fs.createWriteStream(outFile))
+                .on(&apos;close&apos;, () =&gt; {
+                    resolve();
+                })
+        });
+    });
+}
+
+// Finds all links with images as a child.
+function extractImgLinks() {
+    const extractedElements = document.querySelectorAll(&apos;a img&apos;);
+    const items = [];
+    for (let element of extractedElements) {
+        items.push(element.src)
+    }
+    return items;
+}
+
+async function scrollToEndOfPage(
+    page,
+    extractImgLinks = () =&gt; {},
+) {
+    let items = [];
+    try {
+        let previousHeight;
+        while (true) {
+            const curHeight = await page.evaluate(&apos;document.body.scrollHeight&apos;);
+            if (previousHeight === curHeight) {
+                break;
+            }
+            previousHeight = curHeight;
+            await page.evaluate(&apos;window.scrollTo(0, document.body.scrollHeight)&apos;);
+            await page.waitForFunction(`document.body.scrollHeight &gt; ${previousHeight}`);
+            await page.waitFor(3500);
+            const links = await page.evaluate(extractImgLinks).catch(err =&gt; {
+                console.log(err);
+                return [];
+            });
+            items = [...items, ...links];
+        }
+    } catch (e) {
+    }
+    return items;
+}
+
+(async function main() {
+    // Set up browser and page.
+    const browser = await puppeteer.launch({
+        headless: false,
+        args: [&apos;--no-sandbox&apos;, &apos;--disable-setuid-sandbox&apos;],
+    });
+    const page = await browser.newPage();
+    page.setViewport({ width: 1600, height: 1600 });
+
+    const url = &quot;https://www.instagram.com/thejenkinscomic&quot;
+    await page.goto(url);
+
+    // Scroll and extract items from the page.
+    const links = await scrollToEndOfPage(page, extractImgLinks);
+    // Close the browser.
+    await browser.close();
+
+    // Creates a directory to store the images
+    const username = url.substring(instagramUrl.length);
+    const dir = &quot;./&quot; + username;
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir);
+    }
+
+    // Downloads all the images
+    function removeDuplicates(array) {
+        return array.filter((a, b) =&gt; array.indexOf(a) === b)
+    };
+    const linksWithoutDuplicates = removeDuplicates(links);
+    await Promise.all(linksWithoutDuplicates.map(item =&gt; download(item, dir)));
+})();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Now you know how to build your very own front end rendered crawler. You can adapt this to your own use-cases. What do you plan on building? Let me know in the comments section below and check out &lt;a href=&quot;https://techwaifu.com/difference-between-studying-computer-science-working-software-engineer-df3bb680&quot;&gt;Programming in School vs Working as a Software Engineer&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Machine Learning to Increase Photo Resolution with Pixelmator Pro]]></title><description><![CDATA[Ever wanted the power to increase the resolution of images like in those cop shows? Well now you can with Pixelmator Pro using the ML Super…]]></description><link>https://techwaifu.com/blog/machine-learning-photos-46a2d49c</link><guid isPermaLink="false">https://techwaifu.com/blog/machine-learning-photos-46a2d49c</guid><pubDate>Tue, 11 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Ever wanted the power to increase the resolution of images like in those cop shows? Well now you can with Pixelmator Pro using the &lt;a href=&quot;https://www.pixelmator.com/blog/2019/12/17/all-about-the-new-ml-super-resolution-feature-in-pixelmator-pro/&quot;&gt;ML Super Resolution&lt;/a&gt; feature. You can read that linked blog post for more details on how it works, but the TLDR is Pixelmator uses machine learning to predict how the image should look. They trained the app with a large dataset of images to train a model on how to upscale an image. This app only works for Mac OSX and they recommend using a new Mac for the fastest performance like the new &lt;a href=&quot;https://amzn.to/2Dwfda4&quot;&gt;Macbook Pro 16 inch&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Testing Against a Manually Compressed Image&lt;/h2&gt;
 &lt;p&gt;For the first test, I manually reduced the image resolution of a picture of everyone&apos;s favorite feline friend. The original image was 488x488 pixels. I ran ML Super Resolution against a compressed version which was 100x100. The image below is the original for reference.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/blogImages/ml_images/jonah.jpg?width=488&amp;#x26;height=488&amp;#x26;isResponsive=true&quot; alt=&quot;Cat&quot;&gt;&lt;/p&gt;
