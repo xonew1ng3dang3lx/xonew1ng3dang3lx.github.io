@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://techwaifu.com/sitemap.xml
+Host: https://techwaifu.com
