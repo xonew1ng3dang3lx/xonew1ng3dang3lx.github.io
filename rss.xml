@@ -1,4 +1,287 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></title><description><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></description><link>https://techwaifu.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 22 Aug 2020 06:44:12 GMT</lastBuildDate><item><title><![CDATA[Building a Crawler for a Client-side Rendered Web App]]></title><description><![CDATA[Back in the day, websites were primarily rendered server side. This made it easy for bots to crawl and extract content from the page without…]]></description><link>https://techwaifu.com/blog/client-side-rendered-crawler-e08c0320</link><guid isPermaLink="false">https://techwaifu.com/blog/client-side-rendered-crawler-e08c0320</guid><pubDate>Sat, 15 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Back in the day, websites were primarily rendered server side. This made it easy for bots to crawl and extract content from the page without using Javascript. However in the last couple of years, we&apos;ve seen an increase of new Javascript frameworks. With the rise of client side rendered apps, it has become a bit more difficult to crawl websites since some sites require Javascript to render. Some client side rendered pages fetch more content via infinitely scrolling making it impossible for a traditional bot to crawl.  Thankfully, we can create a bot that can render Javascript to crawl these types of web apps. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></title><description><![CDATA[TechWaifu's RSS Feed of the best technology and computer science blogs]]></description><link>https://techwaifu.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 Aug 2020 03:29:11 GMT</lastBuildDate><item><title><![CDATA[Optimizing Website Performance to Improve SEO Rank]]></title><description><![CDATA[Wondering why your website's SEO ranking is constantly changing? Google is constantly tweaking their algorithm to improve search quality…]]></description><link>https://techwaifu.com/optimizing-website-performance-improve-seo-384b1f1b</link><guid isPermaLink="false">https://techwaifu.com/optimizing-website-performance-improve-seo-384b1f1b</guid><pubDate>Sat, 22 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Wondering why your website&apos;s SEO ranking is constantly changing? Google is constantly tweaking their algorithm to improve search quality. Some of Google&apos;s most notable changes include filtering out low quality sites, favoring mobile optimized sites, and down ranking sites that artificially increase inbound number of links. Google recently announced that &lt;a href=&quot;https://www.theverge.com/2020/5/28/21272543/google-search-results-page-experience-load-time-contentfu-paint-layout-shift-top-stories-amp&quot;&gt;page experience will impact SEO rankings&lt;/a&gt; as well. This &lt;a href=&quot;https://web.dev/vitals/&quot;&gt;web.dev&lt;/a&gt; goes into more detail on what contributes to a good &quot;page experience&quot; but the main theme is around performance and load times. Today, we&apos;ll be taking a look at the changes I made on my site to account for these changes.&lt;/p&gt;
+&lt;p&gt;Google&apos;s algorithm is a blackbox so we don&apos;t know for sure what signals Google uses to rank your site, but three metrics Google will take into account include Largest Contentful Paint, First Input Delay, and Cumulative Layout Shift.&lt;/p&gt;
+&lt;h2&gt;Site Speed as an SEO Signal&lt;/h2&gt;
+&lt;p&gt;People don&apos;t like to wait in general. This applies to website load times as well. It has been proven that &lt;a href=&quot;https://www.google.com/search?q=longer+load+times+bounce+rates&amp;#x26;oq=longer+load+times+bounce+rates&amp;#x26;aqs=chrome..69i57.2945j0j7&amp;#x26;sourceid=chrome&amp;#x26;ie=UTF-8&quot;&gt;longer load times contribute to higher bounce rates&lt;/a&gt; too. Hence, Google wants to quantify site speed and favor sites withoptimal load times.&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://web.dev/lcp/&quot;&gt;LCP (Largest Contentful Paint)&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This metric is essentially how long it takes to paint what Google considers the main content on the page.&lt;/p&gt;
+&lt;p&gt;For example, if you&apos;re loading up an article and the article has a title, an article image, and some text, Google might consider the most contentful item as the article image. Currently, Google only looks at &lt;a href=&quot;https://web.dev/lcp/#what-elements-are-considered&quot;&gt;certain items on the page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can analyze your website on PageSpeed Insight to see what Google considers the &quot;contentful object&quot;.&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://web.dev/fid/&quot;&gt;FID (First Input Delay)&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;FID is the time it takes for your site to respond to the first click on the page.&lt;/p&gt;
+&lt;p&gt;FID can be calculated by the time it takes between clicking on a link or a button until the browser starts to process that event.&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://web.dev/cls/&quot;&gt;CLS (Cumulative Layout Shift)&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This checks if the content on your page moves around after it has been loaded.&lt;/p&gt;
+&lt;p&gt;Have you ever tried to click on something and then an ad pops up and you click on that instead? Google quantifies this with CLS.&lt;/p&gt;
+&lt;p&gt;TLDR: Reduce load on the device and use placeholders to prevent CLS. This includes reducing how much time the device has to run Javascript, how much time to paint the page, and how much data the site has to fetch at once.&lt;/p&gt;
+&lt;p&gt;To see how your site is performing right now, you can use &lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Ftechwaifu.com%2F&amp;#x26;tab=desktop&quot;&gt;Pagespeed Insights&lt;/a&gt;. If your site has reasonable amount of traffic, it will also show metrics collected from real users. You can also find performance metrics in Chrome&apos;s devtools under the Lighthouse tab.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/seo_performance/pagespeed_stats.jpg?width=1183&amp;#x26;height=1181&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Pagespeed Insights&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Now we know what to improve on, let&apos;s see the change I personally made to improve my scores.&lt;/p&gt;
+&lt;h2&gt;Lazy Loading Content with Long Paint Times&lt;/h2&gt;
+&lt;p&gt;The first improvement I made was to lazy load content such as images, videos, and ads. The way lazy loading works is it defers the rendering and fetching of content until the user has scrolled to a certain threshold.&lt;/p&gt;
+&lt;p&gt;There are a lot of lazy loading libraries out there, but I decided to build my own. The main idea is to listen to the window&apos;s scroll event and check if the user has scrolled to a certain threshold. Once the user has scrolled to that position, then we&apos;ll actually start fetching the content and rendering it on the page.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const componentOffsetTop = ref.current.offsetTop
+const curYPosition = window.scrollY;
+const offset = 500;
+
+if (componentOffsetTop &amp;#x3C;= curYPosition + document.body.clientHeight + offset) {
+    // render the component
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some browsers support lazy loading natively like Chrome. All you need to do is add &lt;code&gt;loading=&quot;lazy&quot;&lt;/code&gt; to your img tag like so.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;#x3C;img src=&quot;image.png&quot; loading=&quot;lazy&quot; alt=&quot;…&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, because not every single browser supports it, I ended up implementing my own solution. For my first pass, I used the following code to lazy load my images. FYI, all of these examples will be in React because my site is written in React.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const LazyLoadImage = (props) =&gt; {
+    const ref = useRef(null);
+    const [state, setState] = useState({
+        loaded: false,
+        src: null,
+        shouldFetch: true,
+    });
+
+    const removeListeners = () =&gt; {
+        window.removeEventListener(&quot;scroll&quot;, handleScroll);
+    };
+
+    const removeListenersCallback = useCallback(removeListeners);
+
+    const loadImage = useCallback (() =&gt; {
+        setState({
+            ...state,
+            src: props.src,
+            shouldFetch: false,
+            srcset: props.srcset,
+            shouldStartLazyLoadAnimation: true,
+        });
+        removeListenersCallback();
+    }, [state, removeListenersCallback, props]);
+
+    const shouldLoadImage = useCallback((componentOffsetTop, userYPosition) =&gt; {
+        return state.shouldFetch &amp;#x26;&amp;#x26;
+        !state.loaded &amp;#x26;&amp;#x26;
+        componentOffsetTop &amp;#x3C;= userYPosition + document.body.clientHeight + 500; 
+    }, [state]);
+
+    const onImageLoad = () =&gt; {
+        if (state.src === props.src) {
+            setState({
+                ...state,
+                loaded: true,
+            });
+        }
+    };
+
+    const handleScroll = useCallback(debounce(() =&gt; {
+        const yPosition = window.scrollY;
+        if (shouldLoadImage(ref.current.offsetTop, yPosition)) {
+            loadImage();
+        }
+    }, 100), [loadImage, shouldLoadImage]);
+
+    useEffect(() =&gt; {
+        const yPosition = window.scrollY;
+        // Handles initial mount to check if image is already within threshold without scrolling.
+        if (shouldLoadImage(ref.current.offsetTop, yPosition)) {
+            loadImage();
+        } else {
+            window.addEventListener(&apos;scroll&apos;, handleScroll);
+        }
+
+        return () =&gt; {
+            removeListenersCallback();
+        };
+    }, [shouldLoadImage, loadImage, handleScroll, removeListenersCallback]);
+
+    const { src } = state;
+    return (
+        &amp;#x3C;img
+            ref={ref}
+            onLoad={onImageLoad}
+            className={props.className}
+            src={src}
+            alt={props.alt}
+            loading=&quot;lazy&quot;
+        /&gt;
+    );
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This Lazy Loading component defers process of fetching images and painting them onto the page, but this code will hurt your Cumulative Layout Shift. We&apos;ll look into how to fix that in the next section.&lt;/p&gt;
+&lt;h2&gt;Using Placeholders Inside of Lazy Loading Containers&lt;/h2&gt;
+&lt;p&gt;The main issue with the lazy loading component is that we don&apos;t know how much space the image will need to take up on the screen.&lt;/p&gt;
+&lt;p&gt;One way to work around this is to ensure all images have the same dimensions for the same component. A common pattern is to either ensure all the images have the same resolution and aspect ratio or to crop the image to make sure it fits in a fixed container.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/seo_performance/fixed_images.jpg?width=1554&amp;#x26;height=927&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Cropped Image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;However, this doesn&apos;t work for all use-cases. For example, my blog has images with various aspect ratios and orientations. Some images are in landscape and some are in portrait. A common practice is to use the following CSS for responsive images.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;img {
+    width: 100%;
+    height: auto;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The issues with using height auto is that the browser doesn&apos;t know how much space to allocate until the image has been loaded. I got around this issue by adding some additional metadata to my images to preallocate the space without actually fetching the image. I added the expected width and height as a query parameter to the image.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/blogImages/chromebook_coding/cover-2.jpg?width=1742&amp;#x26;height=1306
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/seo_performance/preallocated_img.jpg?width=2334&amp;#x26;height=1256&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Preallocated Image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The query parameters contain both the width and height of the image so I know exactly how much space to allocate. Then in the Lazy Load Image component, I set the initial state of &lt;code&gt;src&lt;/code&gt; with a placeholder svg using the width and height specified in the query params. This svg reserves the required space on the page before we fetch the image.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const placeholderSrc = (img) =&gt; {
+    const { width, height } = img;
+    return `data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 ${width} ${height}&quot;%3E%3C/svg%3E`;
+};
+
+...
+
+const [state, setState] = useState({
+    loaded: false,
+    src: placeholderSrc(props),
+    ...
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now your Lazy Loaded image won&apos;t have any issues with shifted layouts!&lt;/p&gt;
+&lt;h2&gt;Using Appropriate Image Size for Certain Device Dimensions&lt;/h2&gt;
+&lt;p&gt;Lastly, I started added a srcset to my images. Essentially this tells the browser to use a different sized dimension based on its size. You can customize it such that when using a mobile device, it&apos;ll fetch a lower resolution image and a non mobile device will use a higher resolution image. On this site, each image has 6 variations: width of 240px, width of 320px, width of 480px, width of 720px, width of 960px, and the original image. I use the lower resolution photos when I expect the image won&apos;t exceed a certain size. For example, on the &lt;a href=&quot;https://techwaifu.com/&quot;&gt;homepage of Techwaifu.com&lt;/a&gt;, the images in the smaller article cards never exceed 300px, so I always use the &lt;a href=&quot;http://techwaifu.com/blogImages/chromebook_coding/cover-2-320.jpg&quot;&gt;320px variation of the image&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/seo_performance/fixed_width_img.jpg?width=1919&amp;#x26;height=800&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Fixed Width Image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;When comparing the original image versus a shrunken variation of the image, you&apos;ll notice the original one will always take longer to download and is much larger to download. This is great for improving your site&apos;s performance since you won&apos;t need to fetch and render a 3200x2400 image on your 375x812 device. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/seo_performance/original_img.jpg?width=1286&amp;#x26;height=1061&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Original Image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img-caption&gt;&lt;a href=&quot;https://techwaifu.com/blogImages/leica_cl/leica_summilux_tl_5.jpg&quot;&gt;Original Image&lt;/a&gt; | 299kB | 94ms to Download&lt;/img-caption&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blogImages/seo_performance/shrunken_img.jpg?width=1289&amp;#x26;height=1000&amp;#x26;isResponsive=true&amp;#x26;supportsWebp=true&quot; alt=&quot;Compressed Image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img-caption&gt;&lt;a href=&quot;https://techwaifu.com/blogImages/leica_cl/leica_summilux_tl_5-480.jpg&quot;&gt;Shrunken Image&lt;/a&gt; | 52.9kB | 47ms to Download&lt;/img-caption&gt;&lt;/p&gt;
+&lt;p&gt;Now let&apos;s take a look at how this is done in the code. If you inspect an image on &lt;a href=&quot;https://techwaifu.com/recommended-chromebooks-for-programming-2020-5734ed1a&quot;&gt;Techwaifu&apos;s blog&lt;/a&gt;, you&apos;ll notice there&apos;s two attributes on the image other than src: sizes and srcset. &lt;/p&gt;
+&lt;p&gt;The sizes attribute determines which image from the srcset should be used. It&apos;s pretty flexible since you can change the image to fetch based on the device size using max-width. Take a look at this article on &lt;a href=&quot;https://ericportis.com/posts/2014/srcset-sizes/%5D&quot;&gt;srcset and sizes&lt;/a&gt; for an in-depth guide.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sizes=&quot;(max-width: 480px) 150px, 480px&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The srcset contains all the different sized images with the width the image should be used at. &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;srcset=&quot;/blogImages/ml_images/cover-240.jpg 240w, /blogImages/ml_images/cover-320.jpg 320w, /blogImages/ml_images/cover-480.jpg 480w, /blogImages/ml_images/cover-720.jpg 720w, /blogImages/ml_images/cover-960.jpg 960w&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Altogether, the image tag looks like this.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;#x3C;img src=&quot;/blogImages/ml_images/cover-240.jpg&quot; sizes=&quot;(max-width: 480px) 150px, 480px&quot; srcset=&quot;/blogImages/ml_images/cover-240.jpg 240w, /blogImages/ml_images/cover-320.jpg 320w, /blogImages/ml_images/cover-480.jpg 480w, /blogImages/ml_images/cover-720.jpg 720w, /blogImages/ml_images/cover-960.jpg 960w&quot;&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It&apos;s pretty easy to generate all the various images using &lt;a href=&quot;https://www.npmjs.com/package/sharp&quot;&gt;Sharp&lt;/a&gt;. Sharp can be used to resize images and even generate a &lt;a href=&quot;https://developers.google.com/speed/webp&quot;&gt;webp&lt;/a&gt; variant. I used this code generate all the images at the different sizes. &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const fs = require(&apos;fs&apos;);
+const sharp = require(&apos;sharp&apos;);
+const shell = require(&apos;shelljs&apos;);
+
+const XXS_WIDTH = 240;
+const XS_WIDTH = 320;
+const S_WIDTH = 480;
+const M_WIDTH = 720;
+const L_WIDTH = 960;
+
+const compressedSizes = [
+    XXS_WIDTH,
+    XS_WIDTH,
+    S_WIDTH,
+    M_WIDTH,
+    L_WIDTH,
+];
+
+function resizeImages(imagePath) {
+    compressedSizes.forEach(width =&gt; {
+        const outPath = &quot;out/&quot; + imagePath.substring(0, imagePath.lastIndexOf(&quot;/&quot;));
+        // Create the folders for the output
+        if (!fs.existsSync(outPath)) {
+            shell.mkdir(&apos;-p&apos;, outPath);
+        }
+
+        // Generates jpg images
+        const outPathWithSize = imagePath.substring(0, imagePath.indexOf(&quot;.&quot;)) + &quot;-&quot; + width;
+
+        sharp(imagePath, {
+            failOnError: false
+        })
+        .clone()
+        .resize({ width: width })
+        .toFile(&quot;out/&quot; + outPathWithSize + &quot;.jpg&quot;).catch(err =&gt; console.log(err));
+    });
+}   
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I also needed to update my Lazy Load component so the image will accept the srcset.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const LazyLoadImage = (props) =&gt; {
+    const ref = useRef(null);
+    const [state, setState] = useState({
+        loaded: false,
+        src: placeholderSrc(props),
+        srcSet: null, 
+        shouldFetch: true,
+    });
+
+    const removeListeners = () =&gt; {
+        window.removeEventListener(&quot;scroll&quot;, handleScroll);
+    };
+
+    const removeListenersCallback = useCallback(removeListeners);
+
+    const loadImage = useCallback (() =&gt; {
+        setState({
+            ...state,
+            src: props.src,
+            shouldFetch: false,
+            srcset: props.srcset,
+        });
+        removeListenersCallback();
+    }, [state, removeListenersCallback, props]);
+
+    const shouldLoadImage = useCallback((componentOffsetTop, userYPosition) =&gt; {
+        return state.shouldFetch &amp;#x26;&amp;#x26;
+        !state.loaded &amp;#x26;&amp;#x26;
+        componentOffsetTop &amp;#x3C;= userYPosition + document.body.clientHeight + 500; 
+    }, [state]);
+
+    const onImageLoad = () =&gt; {
+        if (!state.loaded &amp;#x26;&amp;#x26; state.src === props.src) {
+            setState({
+                ...state,
+                loaded: true,
+            });
+        }
+    };
+
+    const onError = () =&gt; {
+        setState({
+            ...state,
+            loaded: true
+        });
+        removeListeners();
+    };
+
+    const handleScroll = useCallback(debounce(() =&gt; {
+        const yPosition = window.scrollY;
+        if (shouldLoadImage(ref.current.offsetTop, yPosition)) {
+            loadImage();
+        }
+    }, 100), [loadImage, shouldLoadImage]);
+
+    useEffect(() =&gt; {
+        const yPosition = window.scrollY;
+        // Handles initial mount to check if image is already within threshold without scrolling.
+        if (shouldLoadImage(ref.current.offsetTop, yPosition)) {
+            loadImage();
+        } else {
+            window.addEventListener(&apos;scroll&apos;, handleScroll);
+        }
+
+        return () =&gt; {
+            removeListenersCallback();
+        };
+    }, [shouldLoadImage, loadImage, handleScroll, removeListenersCallback]);
+
+    const { loaded, src, srcset  } = state;
+    const { sizes } = props;
+    return (
+        &amp;#x3C;img
+            ref={ref}
+            onLoad={onImageLoad}
+            onError={onError}
+            className={props.className}
+            src={src}
+            srcSet={srcset}
+            sizes={sizes}
+            alt={props.alt}
+            loading=&quot;lazy&quot;
+        /&gt;
+    );
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Congrats! Now you have a Lazy Loaded Image that supports different sized images using srcset.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I primarily worked on optimizing the images on my site because images are usually the largest contentful item on each blog post. Using this lazy loaded component with the placeholder helped reduce my CLS from &gt; 0.10 to 0. Lazy loading also reduced the initial render since the browser didn&apos;t have to paint all the images at once. Using srcsets also optimized how large each network request as well. I would recommend recommend looking at &lt;a href=&quot;https://web.dev/vitals/&quot;&gt;web.dev&lt;/a&gt; to see their recommendations for improving site performance as well. Be sure to track your site&apos;s performance over time using &lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/&quot;&gt;PageSpeed Insights&lt;/a&gt;. Every time I made a change, I verified the before and after performance on that site to verify it really is an improvement. What changes have you made to your site to account for Google&apos;s algorithm change? Let me know in the comments section below and check out &lt;a href=&quot;https://techwaifu.com/recommended-chromebooks-for-programming-2020-5734ed1a&quot;&gt;The Best Chromebooks for Programming in 2020&lt;/a&gt; to find your next laptop.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Building a Crawler for a Client-side Rendered Web App]]></title><description><![CDATA[Back in the day, websites were primarily rendered server side. This made it easy for bots to crawl and extract content from the page without…]]></description><link>https://techwaifu.com/blog/client-side-rendered-crawler-e08c0320</link><guid isPermaLink="false">https://techwaifu.com/blog/client-side-rendered-crawler-e08c0320</guid><pubDate>Sat, 15 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Back in the day, websites were primarily rendered server side. This made it easy for bots to crawl and extract content from the page without using Javascript. However in the last couple of years, we&apos;ve seen an increase of new Javascript frameworks. With the rise of client side rendered apps, it has become a bit more difficult to crawl websites since some sites require Javascript to render. Some client side rendered pages fetch more content via infinitely scrolling making it impossible for a traditional bot to crawl.  Thankfully, we can create a bot that can render Javascript to crawl these types of web apps. &lt;/p&gt;
 &lt;p&gt;In this tutorial, we&apos;ll be using &lt;a href=&quot;https://github.com/puppeteer/puppeteer&quot;&gt;puppeteer&lt;/a&gt; to crawl Instagram. You can use this library to control Chromium to crawl websites. &lt;/p&gt;
 &lt;p&gt;Start by creating a new project with &lt;code&gt;npm init&lt;/code&gt;. Add puppeteer and request to your &lt;code&gt;package.json&lt;/code&gt; via:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;npm add puppeteer request
